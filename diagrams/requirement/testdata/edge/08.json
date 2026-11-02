@@ -1,0 +1,44 @@
+{
+ "type": "requirement",
+ "data": {
+  "nodes": [
+   {
+    "name": "r",
+    "type": "Requirement",
+    "requirementId": "REQ-001",
+    "text": "The system shall be user-friendly, fast: always",
+    "risk": "",
+    "verifyMethod": "",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "id": "r",
+    "cssClasses": "default",
+    "shape": "requirementBox",
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "name": "q",
+    "type": "Requirement",
+    "requirementId": "#5 is broken",
+    "text": "low priority test",
+    "risk": "",
+    "verifyMethod": "",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "id": "q",
+    "cssClasses": "default",
+    "shape": "requirementBox",
+    "look": "classic",
+    "colorIndex": 1
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

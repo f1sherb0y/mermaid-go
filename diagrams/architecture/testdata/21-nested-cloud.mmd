@@ -1,0 +1,26 @@
+architecture-beta
+    group aws(cloud)[AWS]
+    group region(cloud)[us-east-1] in aws
+    group vpc(cloud)[VPC 10.0.0.0/16] in region
+    group pub(cloud)[Public subnet] in vpc
+    group app(server)[App subnet] in vpc
+    group db(database)[DB subnet] in vpc
+
+    service user(internet)[User]
+    service dns(cloud)[Route 53] in aws
+    service s3(disk)[S3 Bucket] in region
+    service alb(server)[ALB] in pub
+    service nat(server)[NAT Gateway] in pub
+    service ecs1(server)[ECS Task A] in app
+    service ecs2(server)[ECS Task B] in app
+    service rds(database)[RDS] in db
+    service redis(disk)[ElastiCache] in db
+
+    user:R --> L:dns
+    dns:R --> L:alb
+    alb:B --> T:ecs1
+    ecs1:R --> L:ecs2
+    ecs1:B --> T:rds
+    ecs2:B --> T:redis
+    ecs2:T --> B:nat
+    nat:R --> L:s3

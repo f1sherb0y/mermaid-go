@@ -1,0 +1,10 @@
+sequenceDiagram
+    autonumber
+    participant Alice
+    participant John
+    Alice->>()John: Hello John
+    Alice()->>John: How are you?
+    John()->>()Alice: Great!
+    John/|-()Alice: reverse to center
+    Alice()<<->>John: both ways
+    John->>John: self

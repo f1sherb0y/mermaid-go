@@ -1,0 +1,63 @@
+{
+ "type": "requirement",
+ "data": {
+  "nodes": [
+   {
+    "name": "r",
+    "type": "Requirement",
+    "requirementId": "1",
+    "text": "hello",
+    "risk": "High",
+    "verifyMethod": "Test",
+    "cssStyles": [
+     "fill:#f9f"
+    ],
+    "classes": [
+     "default"
+    ],
+    "id": "r",
+    "cssClasses": "default",
+    "shape": "requirementBox",
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "name": "e",
+    "type": "sim",
+    "docRef": "",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "shape": "requirementBox",
+    "look": "classic",
+    "id": "e",
+    "cssClasses": "default",
+    "colorIndex": 1
+   }
+  ],
+  "edges": [
+   {
+    "id": "e-r-0",
+    "start": "e",
+    "end": "r",
+    "label": "&lt;&lt;satisfies&gt;&gt;",
+    "classes": "relationshipLine",
+    "style": [
+     "fill:none",
+     "stroke-dasharray: 10,7"
+    ],
+    "labelpos": "c",
+    "thickness": "normal",
+    "type": "normal",
+    "pattern": "dashed",
+    "arrowTypeStart": "",
+    "arrowTypeEnd": "requirement_arrow",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

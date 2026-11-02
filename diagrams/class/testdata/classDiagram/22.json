@@ -1,0 +1,175 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Company",
+    "label": "Company",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic"
+   },
+   {
+    "id": "Company.Engineering",
+    "label": "Engineering",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic",
+    "parentId": "Company"
+   },
+   {
+    "id": "Company.Engineering.Backend",
+    "label": "Backend",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic",
+    "parentId": "Company.Engineering"
+   },
+   {
+    "id": "Company.Engineering.Frontend",
+    "label": "Frontend",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic",
+    "parentId": "Company.Engineering"
+   },
+   {
+    "id": "Developer",
+    "label": "Developer",
+    "text": "Developer",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+writeCode()",
+      "id": "writeCode",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Developer-76",
+    "parent": "Company.Engineering.Backend",
+    "isGroup": false,
+    "parentId": "Company.Engineering.Backend",
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Designer",
+    "label": "Designer",
+    "text": "Designer",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+createMockup()",
+      "id": "createMockup",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Designer-77",
+    "parent": "Company.Engineering.Frontend",
+    "isGroup": false,
+    "parentId": "Company.Engineering.Frontend",
+    "look": "classic",
+    "colorIndex": 1
+   },
+   {
+    "id": "CEO",
+    "label": "CEO",
+    "text": "CEO",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+makeDecisions()",
+      "id": "makeDecisions",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-CEO-78",
+    "parent": "Company",
+    "isGroup": false,
+    "parentId": "Company",
+    "look": "classic",
+    "colorIndex": 2
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_CEO_Developer_1",
+    "start": "CEO",
+    "end": "Developer",
+    "type": "normal",
+    "label": "oversees",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "dependency",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_CEO_Designer_2",
+    "start": "CEO",
+    "end": "Designer",
+    "type": "normal",
+    "label": "oversees",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "dependency",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "type": "flowchart-v2",
+ "data": {
+  "nodes": [
+   {
+    "id": "A",
+    "label": "Multiple processes",
+    "labelType": "markdown",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-A-0",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "processes",
+    "minWidth": 120
+   }
+  ],
+  "edges": [],
+  "other": {}
+ }
+}

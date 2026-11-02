@@ -1,0 +1,98 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Shape",
+    "label": "Shape",
+    "text": "Shape",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "",
+      "classifier": "",
+      "text": "draw()",
+      "id": "draw",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "",
+      "classifier": "",
+      "text": "noOfVertices",
+      "id": "noOfVertices"
+     }
+    ],
+    "annotations": [
+     "interface"
+    ],
+    "styles": [],
+    "domId": "classId-Shape-87",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Color",
+    "label": "Color",
+    "text": "Color",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "",
+      "classifier": "",
+      "text": "RED",
+      "id": "RED"
+     },
+     {
+      "memberType": "attribute",
+      "visibility": "",
+      "classifier": "",
+      "text": "BLUE",
+      "id": "BLUE"
+     },
+     {
+      "memberType": "attribute",
+      "visibility": "",
+      "classifier": "",
+      "text": "GREEN",
+      "id": "GREEN"
+     },
+     {
+      "memberType": "attribute",
+      "visibility": "",
+      "classifier": "",
+      "text": "WHITE",
+      "id": "WHITE"
+     },
+     {
+      "memberType": "attribute",
+      "visibility": "",
+      "classifier": "",
+      "text": "BLACK",
+      "id": "BLACK"
+     }
+    ],
+    "annotations": [
+     "enumeration"
+    ],
+    "styles": [],
+    "domId": "classId-Color-88",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 1
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

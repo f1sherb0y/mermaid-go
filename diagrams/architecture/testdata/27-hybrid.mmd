@@ -1,0 +1,22 @@
+architecture-beta
+    group onprem(server)[On-premises datacenter]
+    group cloud(cloud)[Cloud]
+    group cloudnet(cloud)[Virtual network] in cloud
+
+    service ad(server)[Active Directory] in onprem
+    service erp(server)[ERP] in onprem
+    service sql(database)[SQL Server] in onprem
+    service vpn(internet)[VPN Gateway] in onprem
+    service cvpn(internet)[Cloud VPN] in cloudnet
+    service vm(server)[App VMs] in cloudnet
+    service blob(disk)[Backups] in cloud
+    service idp(server)[Identity] in cloud
+
+    erp:B -- T:sql
+    erp:L -- R:ad
+    erp:R -- L:vpn
+    vpn:R <--> L:cvpn
+    cvpn:R --> L:vm
+    vm:B --> T:blob
+    vm:T --> B:idp
+    sql:B --> L:blob

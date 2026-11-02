@@ -1,0 +1,37 @@
+sequenceDiagram
+    participant A
+    participant B
+    participant C
+    loop Every day
+        A->>+B: start
+        B->>+B: think
+        rect rgba(0, 128, 255, 0.2)
+            B->>C: ask
+            Note over B,C: inside rect
+        end
+        alt ok
+            C-->>B: yes
+        else not ok
+            C-->>B: no
+            opt retry
+                B->>C: again
+            end
+        else unknown
+            C--xB: drop
+        end
+        B-->>-B: done thinking
+        B-->>-A: result
+    end
+    critical Lock
+        A->>C: lock
+    option Timeout
+        A->>A: log
+    end
+    break failure
+        A->>B: abort
+    end
+    par_over Parallel
+        A->>B: one
+    and
+        A->>C: two
+    end

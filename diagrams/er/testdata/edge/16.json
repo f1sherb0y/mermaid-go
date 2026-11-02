@@ -1,0 +1,39 @@
+{
+ "type": "er",
+ "data": {
+  "nodes": [
+   {
+    "id": "entity-A-0",
+    "label": "A",
+    "attributes": [
+     {
+      "type": "string",
+      "name": "FK-ref",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "int",
+      "name": "PK-id",
+      "keys": [
+       "PK"
+      ],
+      "comment": ""
+     }
+    ],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 0,
+    "isGroup": false
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

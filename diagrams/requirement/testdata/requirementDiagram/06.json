@@ -1,0 +1,61 @@
+{
+ "type": "requirement",
+ "data": {
+  "nodes": [
+   {
+    "name": "test_req",
+    "type": "Requirement",
+    "requirementId": "1",
+    "text": "the test text.",
+    "risk": "High",
+    "verifyMethod": "Test",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "id": "test_req",
+    "cssClasses": "default",
+    "shape": "requirementBox",
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "name": "test_entity",
+    "type": "simulation",
+    "docRef": "",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "shape": "requirementBox",
+    "look": "classic",
+    "id": "test_entity",
+    "cssClasses": "default",
+    "colorIndex": 1
+   }
+  ],
+  "edges": [
+   {
+    "id": "test_entity-test_req-0",
+    "start": "test_entity",
+    "end": "test_req",
+    "label": "&lt;&lt;satisfies&gt;&gt;",
+    "classes": "relationshipLine",
+    "style": [
+     "fill:none",
+     "stroke-dasharray: 10,7"
+    ],
+    "labelpos": "c",
+    "thickness": "normal",
+    "type": "normal",
+    "pattern": "dashed",
+    "arrowTypeStart": "",
+    "arrowTypeEnd": "requirement_arrow",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "LR"
+ }
+}

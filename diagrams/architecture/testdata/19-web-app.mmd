@@ -1,0 +1,29 @@
+architecture-beta
+    service users(internet)[Users]
+    service cdn(cloud)[CDN]
+
+    group vpc(cloud)[Production VPC]
+    group public(cloud)[Public Subnet] in vpc
+    group private(server)[Private Subnet] in vpc
+    group data(database)[Data Tier] in vpc
+
+    service lb(server)[Load Balancer] in public
+    service app1(server)[App Server 1] in private
+    service app2(server)[App Server 2] in private
+    service app3(server)[App Server 3] in private
+    service worker(server)[Worker] in private
+    service cache(disk)[Redis] in data
+    service db(database)[Postgres] in data
+    service replica(database)[Replica] in data
+    service queue(disk)[Queue] in data
+
+    users:R --> L:cdn
+    cdn:R --> L:lb
+    lb:R --> L:app2
+    lb:T --> L:app1
+    lb:B --> L:app3
+    app2:R --> L:db
+    db:B --> T:replica
+    db:T --> B:cache
+    app3:R --> L:queue
+    queue:B --> T:worker

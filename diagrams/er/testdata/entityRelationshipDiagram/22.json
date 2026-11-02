@@ -1,0 +1,96 @@
+{
+ "type": "er",
+ "data": {
+  "nodes": [
+   {
+    "id": "entity-CAR-0",
+    "label": "CAR",
+    "attributes": [
+     {
+      "type": "string",
+      "name": "registrationNumber",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "string",
+      "name": "make",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "string",
+      "name": "model",
+      "keys": [],
+      "comment": ""
+     }
+    ],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default someclass",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [
+     "fill:#f96"
+    ],
+    "colorIndex": 0,
+    "isGroup": false
+   },
+   {
+    "id": "entity-PERSON-1",
+    "label": "PERSON",
+    "attributes": [
+     {
+      "type": "string",
+      "name": "firstName",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "string",
+      "name": "lastName",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "int",
+      "name": "age",
+      "keys": [],
+      "comment": ""
+     }
+    ],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default someclass",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [
+     "fill:#f96"
+    ],
+    "colorIndex": 1,
+    "isGroup": false
+   },
+   {
+    "id": "entity-HOUSE-2",
+    "label": "HOUSE",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default someclass",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [
+     "fill:#f96"
+    ],
+    "colorIndex": 2,
+    "isGroup": false
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

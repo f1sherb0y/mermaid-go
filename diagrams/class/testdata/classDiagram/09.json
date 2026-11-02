@@ -1,0 +1,59 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "BankAccount",
+    "label": "BankAccount",
+    "text": "BankAccount",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+deposit(amount)",
+      "id": "deposit",
+      "parameters": "amount",
+      "returnType": ""
+     },
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+withdrawal(amount)",
+      "id": "withdrawal",
+      "parameters": "amount",
+      "returnType": ""
+     }
+    ],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+String owner",
+      "id": "String owner"
+     },
+     {
+      "memberType": "attribute",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+BigDecimal balance",
+      "id": "BigDecimal balance"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-BankAccount-21",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

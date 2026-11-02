@@ -1,0 +1,12 @@
+architecture-beta
+    service a(server)[A]
+    service b(server)[B]
+    service c(server)[C]
+    service d(server)[D]
+    service x(database)[X]
+    a:R --> L:b
+    b:B --> T:c
+    c:L --> R:d
+    d:T --> B:a
+    a:L -- R:x
+    b:R -- L:x

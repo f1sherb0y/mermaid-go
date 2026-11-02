@@ -1,0 +1,62 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Animal",
+    "label": "Animal",
+    "text": "Animal",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Animal-62",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Zebra",
+    "label": "Zebra",
+    "text": "Zebra",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Zebra-63",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 1
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_Animal_Zebra_1",
+    "start": "Animal",
+    "end": "Zebra",
+    "type": "normal",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "extension",
+    "arrowTypeEnd": "extension",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

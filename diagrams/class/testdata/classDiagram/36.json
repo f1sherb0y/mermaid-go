@@ -1,0 +1,47 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Animal",
+    "label": "Animal",
+    "text": "Animal",
+    "shape": "classBox",
+    "cssClasses": "default pink",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [
+     "fill:#f96",
+     "color:red",
+     "color:#f9f"
+    ],
+    "domId": "classId-Animal-106",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Mineral",
+    "label": "Mineral",
+    "text": "Mineral",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [
+     "fill:#f96",
+     "color:red"
+    ],
+    "domId": "classId-Mineral-107",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 1
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

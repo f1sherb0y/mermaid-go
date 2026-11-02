@@ -1,0 +1,89 @@
+{
+ "type": "requirement",
+ "data": {
+  "nodes": [
+   {
+    "name": "Req One",
+    "type": "Requirement",
+    "requirementId": "1",
+    "text": "first, text",
+    "risk": "Low",
+    "verifyMethod": "Inspection",
+    "cssStyles": [
+     "fill:#f00",
+     "stroke-width:4px",
+     "color:red"
+    ],
+    "classes": [
+     "default",
+     "hot",
+     "cold"
+    ],
+    "id": "Req One",
+    "cssClasses": "default hot cold",
+    "shape": "requirementBox",
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "name": "E1",
+    "type": "simulation",
+    "docRef": "docs/y",
+    "cssStyles": [
+     "fill:#f00",
+     "stroke-width:4px"
+    ],
+    "classes": [
+     "default",
+     "hot"
+    ],
+    "shape": "requirementBox",
+    "look": "classic",
+    "id": "E1",
+    "cssClasses": "default hot",
+    "colorIndex": 1
+   }
+  ],
+  "edges": [
+   {
+    "id": "E1-Req One-0",
+    "start": "E1",
+    "end": "Req One",
+    "label": "&lt;&lt;traces&gt;&gt;",
+    "classes": "relationshipLine",
+    "style": [
+     "fill:none",
+     "stroke-dasharray: 10,7"
+    ],
+    "labelpos": "c",
+    "thickness": "normal",
+    "type": "normal",
+    "pattern": "dashed",
+    "arrowTypeStart": "",
+    "arrowTypeEnd": "requirement_arrow",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "E1-missing-1",
+    "start": "E1",
+    "label": "&lt;&lt;contains&gt;&gt;",
+    "classes": "relationshipLine",
+    "style": [
+     "fill:none",
+     ""
+    ],
+    "labelpos": "c",
+    "thickness": "normal",
+    "type": "normal",
+    "pattern": "normal",
+    "arrowTypeStart": "requirement_contains",
+    "arrowTypeEnd": "",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

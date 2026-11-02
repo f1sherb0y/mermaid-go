@@ -1,0 +1,43 @@
+flowchart TD
+  subgraph s["Level 1 s"]
+    sa[s a] --> sb(s b)
+    subgraph sx["Level 2 sx"]
+      sxa[sx a] --> sxb(sx b)
+      subgraph sxx["Level 3 sxx"]
+        sxxa[sxx a] --> sxxb(sxx b)
+        subgraph sxxx["Level 4 sxxx"]
+          sxxxa[sxxx a] --> sxxxb(sxxx b)
+          subgraph sxxxx["Level 5 sxxxx"]
+            sxxxxa[sxxxx a] --> sxxxxb(sxxxx b)
+            subgraph sxxxxx["Level 6 sxxxxx"]
+              sxxxxxa[sxxxxx a] --> sxxxxxb(sxxxxx b)
+            end
+          end
+          subgraph sxxxy["Level 5 sxxxy"]
+            sxxxya[sxxxy a] --> sxxxyb(sxxxy b)
+            subgraph sxxxyx["Level 6 sxxxyx"]
+              sxxxyxa[sxxxyx a] --> sxxxyxb(sxxxyx b)
+            end
+          end
+        end
+      end
+      subgraph sxy["Level 3 sxy"]
+        sxya[sxy a] --> sxyb(sxy b)
+        subgraph sxyx["Level 4 sxyx"]
+          sxyxa[sxyx a] --> sxyxb(sxyx b)
+          subgraph sxyxx["Level 5 sxyxx"]
+            sxyxxa[sxyxx a] --> sxyxxb(sxyxx b)
+            subgraph sxyxxx["Level 6 sxyxxx"]
+              sxyxxxa[sxyxxx a] --> sxyxxxb(sxyxxx b)
+            end
+          end
+          subgraph sxyxy["Level 5 sxyxy"]
+            sxyxya[sxyxy a] --> sxyxyb(sxyxy b)
+            subgraph sxyxyx["Level 6 sxyxyx"]
+              sxyxyxa[sxyxyx a] --> sxyxyxb(sxyxyx b)
+            end
+          end
+        end
+      end
+    end
+  end

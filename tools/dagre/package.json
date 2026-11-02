@@ -1,0 +1,9 @@
+{
+  "name": "dagre-ref",
+  "private": true,
+  "type": "module",
+  "description": "Dumps dagre-d3-es layouts as references for the Go port",
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  }
+}

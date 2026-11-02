@@ -1,0 +1,19 @@
+---
+config:
+  look: classic
+---
+sequenceDiagram
+    actor A as Actor
+    participant B@{ "type": "boundary" } as Boundary
+    participant C@{ "type": "control" } as Control
+    participant E@{ "type": "entity" } as Entity
+    participant D@{ "type": "database" } as Database
+    participant L@{ "type": "collections" } as Collections
+    participant Q@{ "type": "queue" } as Queue
+    A->>B: one
+    B->>C: two
+    C->>E: three
+    E->>D: four
+    D->>L: five
+    L->>Q: six
+    Q-->>A: back

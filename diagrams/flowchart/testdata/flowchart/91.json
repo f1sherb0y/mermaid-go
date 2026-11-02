@@ -1,0 +1,61 @@
+{
+ "type": "flowchart-v2",
+ "data": {
+  "nodes": [
+   {
+    "id": "A",
+    "label": "A",
+    "labelType": "text",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-A-0",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "squareRect",
+    "minWidth": 120
+   },
+   {
+    "id": "B",
+    "label": "B",
+    "labelType": "text",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-B-1",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "squareRect",
+    "minWidth": 120
+   }
+  ],
+  "edges": [
+   {
+    "id": "L_A_B_0",
+    "isUserDefinedId": false,
+    "start": "A",
+    "end": "B",
+    "type": "arrow_cross",
+    "label": "",
+    "labelType": "text",
+    "labelpos": "c",
+    "thickness": "normal",
+    "minlen": 1,
+    "classes": "edge-thickness-normal edge-pattern-solid flowchart-link",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "arrow_cross",
+    "arrowheadStyle": "fill: #333",
+    "cssCompiledStyles": [],
+    "labelStyle": [],
+    "pattern": "normal",
+    "look": "classic",
+    "curve": "basis"
+   }
+  ],
+  "other": {}
+ }
+}

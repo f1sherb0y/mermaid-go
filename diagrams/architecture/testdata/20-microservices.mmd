@@ -1,0 +1,34 @@
+architecture-beta
+    group clients(internet)[Clients]
+    group edge(cloud)[Edge]
+    group services(server)[Services]
+    group storage(database)[Storage]
+
+    service web(internet)[Web App] in clients
+    service mobile(internet)[Mobile App] in clients
+    service gateway(server)[API Gateway] in edge
+    service auth(server)[Auth] in edge
+    service users(server)[Users] in services
+    service orders(server)[Orders] in services
+    service payments(server)[Payments] in services
+    service catalog(server)[Catalog] in services
+    service search(server)[Search] in services
+    service notify(server)[Notifications] in services
+    service usersdb(database)[Users DB] in storage
+    service ordersdb(database)[Orders DB] in storage
+    service catalogdb(database)[Catalog DB] in storage
+    service index(disk)[Search Index] in storage
+
+    web:R --> L:gateway
+    mobile:R --> L:gateway
+    gateway:T --> B:auth
+    gateway:R --> L:orders
+    orders:T --> B:users
+    orders:B --> T:payments
+    orders:R --> L:catalog
+    catalog:B --> T:search
+    payments:R --> L:notify
+    users:R --> L:usersdb
+    catalog:R --> L:catalogdb
+    search:R --> L:index
+    notify:R --> L:ordersdb

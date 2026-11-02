@@ -1,0 +1,63 @@
+{
+ "type": "requirement",
+ "data": {
+  "nodes": [
+   {
+    "name": "dc",
+    "type": "Design Constraint",
+    "requirementId": "D-1",
+    "text": "",
+    "risk": "",
+    "verifyMethod": "",
+    "cssStyles": [
+     "stroke:#000fill:#fff"
+    ],
+    "classes": [
+     "default"
+    ],
+    "id": "dc",
+    "cssClasses": "default",
+    "shape": "requirementBox",
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "name": "dce",
+    "type": "",
+    "docRef": "",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "shape": "requirementBox",
+    "look": "classic",
+    "id": "dce",
+    "cssClasses": "default",
+    "colorIndex": 1
+   }
+  ],
+  "edges": [
+   {
+    "id": "dc-dce-0",
+    "start": "dc",
+    "end": "dce",
+    "label": "&lt;&lt;satisfies&gt;&gt;",
+    "classes": "relationshipLine",
+    "style": [
+     "fill:none",
+     "stroke-dasharray: 10,7"
+    ],
+    "labelpos": "c",
+    "thickness": "normal",
+    "type": "normal",
+    "pattern": "dashed",
+    "arrowTypeStart": "",
+    "arrowTypeEnd": "requirement_arrow",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "RL"
+ }
+}

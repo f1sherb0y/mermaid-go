@@ -1,0 +1,17 @@
+classDiagram
+  namespace Shapes {
+    class Shape {
+      <<interface>>
+      +area() double
+    }
+    class Circle {
+      +radius double
+    }
+  }
+  namespace Storage {
+    class Repo~T~ {
+      +save(T item)
+    }
+  }
+  Shape <|.. Circle
+  Repo~T~ --> Shape : stores

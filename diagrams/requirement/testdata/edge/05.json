@@ -1,0 +1,66 @@
+{
+ "type": "requirement",
+ "data": {
+  "nodes": [
+   {
+    "name": "my req",
+    "type": "Physical Requirement",
+    "requirementId": "1.2",
+    "text": "spaces kept inside but not after",
+    "risk": "",
+    "verifyMethod": "Analysis",
+    "cssStyles": [],
+    "classes": [
+     "default",
+     "a",
+     "b"
+    ],
+    "id": "my req",
+    "cssClasses": "default a b",
+    "shape": "requirementBox",
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "name": "x y",
+    "type": "Interface Requirement",
+    "requirementId": "",
+    "text": "",
+    "risk": "",
+    "verifyMethod": "",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "id": "x y",
+    "cssClasses": "default",
+    "shape": "requirementBox",
+    "look": "classic",
+    "colorIndex": 1
+   }
+  ],
+  "edges": [
+   {
+    "id": "my req-x y-0",
+    "start": "my req",
+    "end": "x y",
+    "label": "&lt;&lt;derives&gt;&gt;",
+    "classes": "relationshipLine",
+    "style": [
+     "fill:none",
+     "stroke-dasharray: 10,7"
+    ],
+    "labelpos": "c",
+    "thickness": "normal",
+    "type": "normal",
+    "pattern": "dashed",
+    "arrowTypeStart": "",
+    "arrowTypeEnd": "requirement_arrow",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Class01",
+    "label": "Class01",
+    "text": "Class01",
+    "shape": "classBox",
+    "cssClasses": "default clickable",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Class01-98",
+    "haveCallback": true,
+    "tooltip": "Callback tooltip",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Class02",
+    "label": "Class02",
+    "text": "Class02",
+    "shape": "classBox",
+    "cssClasses": "default clickable",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Class02-99",
+    "link": "https://www.github.com/",
+    "linkTarget": "_blank",
+    "tooltip": "This is a link",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 1
+   },
+   {
+    "id": "Class03",
+    "label": "Class03",
+    "text": "Class03",
+    "shape": "classBox",
+    "cssClasses": "default clickable",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Class03-100",
+    "haveCallback": true,
+    "tooltip": "Callback tooltip",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 2
+   },
+   {
+    "id": "Class04",
+    "label": "Class04",
+    "text": "Class04",
+    "shape": "classBox",
+    "cssClasses": "default clickable",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Class04-101",
+    "link": "https://www.github.com/",
+    "linkTarget": "_blank",
+    "tooltip": "This is a link",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 3
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

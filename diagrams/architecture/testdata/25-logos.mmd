@@ -1,0 +1,16 @@
+architecture-beta
+    group k8s(logos:kubernetes)[Kubernetes cluster]
+    service ingress(logos:nginx)[Ingress] in k8s
+    service api(logos:nodejs-icon)[API] in k8s
+    service worker(logos:python)[Worker] in k8s
+    service pg(logos:postgresql)[PostgreSQL]
+    service redis(logos:redis)[Redis]
+    service s3(logos:aws-s3)[S3]
+    service gh(logos:github-icon)[GitHub Actions]
+
+    gh:R --> L:ingress
+    ingress:R --> L:api
+    api:R --> L:pg
+    api:B --> T:worker
+    worker:R --> L:redis
+    worker:B --> T:s3

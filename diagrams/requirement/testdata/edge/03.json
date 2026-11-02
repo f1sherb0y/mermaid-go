@@ -1,0 +1,27 @@
+{
+ "type": "requirement",
+ "data": {
+  "nodes": [
+   {
+    "name": "r",
+    "type": "Requirement",
+    "requirementId": "",
+    "text": "",
+    "risk": "High",
+    "verifyMethod": "",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "id": "r",
+    "cssClasses": "default",
+    "shape": "requirementBox",
+    "look": "classic",
+    "colorIndex": 0
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

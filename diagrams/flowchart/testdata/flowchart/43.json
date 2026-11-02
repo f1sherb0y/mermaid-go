@@ -1,0 +1,24 @@
+{
+ "type": "flowchart-v2",
+ "data": {
+  "nodes": [
+   {
+    "id": "A",
+    "label": "Fork or Join",
+    "labelType": "markdown",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-A-0",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "fork",
+    "minWidth": 120
+   }
+  ],
+  "edges": [],
+  "other": {}
+ }
+}

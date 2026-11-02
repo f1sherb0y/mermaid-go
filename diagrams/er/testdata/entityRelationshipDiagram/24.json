@@ -1,0 +1,134 @@
+{
+ "type": "er",
+ "data": {
+  "nodes": [
+   {
+    "id": "entity-CAR-0",
+    "label": "CAR",
+    "attributes": [
+     {
+      "type": "string",
+      "name": "registrationNumber",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "string",
+      "name": "make",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "string",
+      "name": "model",
+      "keys": [],
+      "comment": ""
+     }
+    ],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [
+     "fill:#f9f",
+     "stroke-width:4px"
+    ],
+    "colorIndex": 0,
+    "isGroup": false
+   },
+   {
+    "id": "entity-PERSON-1",
+    "label": "PERSON",
+    "attributes": [
+     {
+      "type": "string",
+      "name": "firstName",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "string",
+      "name": "lastName",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "int",
+      "name": "age",
+      "keys": [],
+      "comment": ""
+     }
+    ],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default foo",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [
+     "fill:#f9f",
+     "stroke-width:4px",
+     "stroke:#f00"
+    ],
+    "colorIndex": 1,
+    "isGroup": false
+   },
+   {
+    "id": "entity-HOUSE-2",
+    "label": "HOUSE",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default bar",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [
+     "fill:#f9f",
+     "stroke-width:4px",
+     "stroke:#0f0"
+    ],
+    "colorIndex": 2,
+    "isGroup": false
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_entity-PERSON-1_entity-CAR-0_0",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-PERSON-1",
+    "end": "entity-CAR-0",
+    "label": "owns",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "only_one",
+    "arrowTypeEnd": "only_one",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_entity-PERSON-1_entity-HOUSE-2_1",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-PERSON-1",
+    "end": "entity-HOUSE-2",
+    "label": "has",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "zero_or_more",
+    "arrowTypeEnd": "only_one",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

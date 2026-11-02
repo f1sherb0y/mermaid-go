@@ -1,0 +1,27 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Animal",
+    "label": "Animal",
+    "text": "Animal",
+    "shape": "classBox",
+    "cssClasses": "default someclass",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [
+     "fill:#f96"
+    ],
+    "domId": "classId-Animal-104",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

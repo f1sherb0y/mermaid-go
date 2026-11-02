@@ -1,0 +1,49 @@
+architecture-beta
+    group ingress(internet)[Ingress]
+    group core(server)[Core services]
+    group domain(server)[Domain services]
+    group data(database)[Data]
+    group platform(cloud)[Platform]
+
+    service dns(internet)[DNS] in ingress
+    service waf(server)[WAF] in ingress
+    service lb(server)[LB] in ingress
+    service gw(server)[Gateway] in core
+    service authn(server)[AuthN] in core
+    service authz(server)[AuthZ] in core
+    service session(disk)[Sessions] in core
+    service profile(server)[Profile] in domain
+    service feed(server)[Feed] in domain
+    service media(server)[Media] in domain
+    service chat(server)[Chat] in domain
+    service ads(server)[Ads] in domain
+    service graph(database)[Graph DB] in data
+    service kv(database)[KV Store] in data
+    service objects(disk)[Object Store] in data
+    service olap(database)[OLAP] in data
+    service queue(disk)[Queue] in platform
+    service sched(server)[Scheduler] in platform
+    service mon(server)[Monitoring] in platform
+    service logs(disk)[Logging] in platform
+    service secrets(server)[Secrets] in platform
+
+    dns:R --> L:waf
+    waf:R --> L:lb
+    lb:B --> T:gw
+    gw:L --> R:authn
+    authn:B --> T:authz
+    authn:L --> R:session
+    gw:R --> L:feed
+    feed:T --> B:profile
+    feed:B --> T:media
+    feed:R --> L:chat
+    chat:B --> T:ads
+    profile:R --> L:graph
+    chat:R --> L:kv
+    media:R --> L:objects
+    ads:R --> L:olap
+    olap:B --> T:queue
+    queue:L --> R:sched
+    sched:L --> R:mon
+    mon:L --> R:logs
+    logs:L --> R:secrets

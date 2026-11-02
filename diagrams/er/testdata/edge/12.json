@@ -1,0 +1,85 @@
+{
+ "type": "er",
+ "data": {
+  "nodes": [
+   {
+    "id": "entity-CUSTOMER-0",
+    "label": "CUSTOMER",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 0,
+    "isGroup": false
+   },
+   {
+    "id": "entity-ORDER-1",
+    "label": "ORDER",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 1,
+    "isGroup": false
+   },
+   {
+    "id": "entity-LINE-ITEM-2",
+    "label": "LINE-ITEM",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 2,
+    "isGroup": false
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_entity-CUSTOMER-0_entity-ORDER-1_0",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-CUSTOMER-0",
+    "end": "entity-ORDER-1",
+    "label": "one-to-many",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "only_one",
+    "arrowTypeEnd": "zero_or_more",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_entity-ORDER-1_entity-LINE-ITEM-2_1",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-ORDER-1",
+    "end": "entity-LINE-ITEM-2",
+    "label": "to-do",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "only_one",
+    "arrowTypeEnd": "one_or_more",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

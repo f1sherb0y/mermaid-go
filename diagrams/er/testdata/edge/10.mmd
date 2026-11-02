@@ -1,0 +1,13 @@
+erDiagram
+    direction RL
+    subgraph outer
+        subgraph inner
+            direction LR
+            A ||--|| B : r
+        end
+        C
+    end
+    A ||--|| outer : r2
+    subgraph late
+        outer
+    end

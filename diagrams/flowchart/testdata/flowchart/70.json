@@ -1,0 +1,28 @@
+{
+ "type": "flowchart-v2",
+ "data": {
+  "nodes": [
+   {
+    "id": "A",
+    "label": "My example image label",
+    "labelType": "markdown",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-A-0",
+    "look": "classic",
+    "pos": "t",
+    "img": "https://mermaid.js.org/favicon.svg",
+    "assetHeight": 60,
+    "constraint": "on",
+    "isGroup": false,
+    "shape": "imageSquare",
+    "minWidth": 120
+   }
+  ],
+  "edges": [],
+  "other": {}
+ }
+}

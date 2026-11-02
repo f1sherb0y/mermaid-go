@@ -1,0 +1,10 @@
+%%{init: {"theme": "redux-dark-color"}}%%
+sequenceDiagram
+    participant A
+    participant B@{ "type": "control" }
+    A->>+B: request
+    rect rgb(80, 80, 120)
+      B-->>A: progress
+    end
+    B-->>-A: response
+    Note right of B: done

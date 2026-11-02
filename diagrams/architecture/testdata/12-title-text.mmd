@@ -1,0 +1,19 @@
+---
+title: Front matter title
+---
+architecture-beta
+    title Architecture with a title
+    accTitle: Accessible title
+    accDescr {
+        A multi-line
+        description
+    }
+    group g(cloud)["A group with a rather long title that is wider than its contents"]
+    service q(logos:aws-s3)[Unknown icon pack]
+    service u(nosuchicon)[Unknown name]
+    service n[No icon at all]
+    service long(server)[A service with a very long label that wraps over several lines] in g
+    service cjk(database)[数据库服务器] in g
+    long:R -- L:cjk
+    q:R -- L:u
+    u:R -- L:n

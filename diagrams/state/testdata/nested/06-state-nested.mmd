@@ -1,0 +1,26 @@
+stateDiagram-v2
+    [*] --> Active
+    state Active {
+        [*] --> Idle
+        Idle --> Working : start
+        state Working {
+            [*] --> Fetch
+            Fetch --> Process
+            state Process {
+                [*] --> Parse
+                Parse --> Validate
+                state Validate {
+                    [*] --> Schema
+                    Schema --> Rules
+                    Rules --> [*]
+                }
+                Validate --> [*]
+            }
+            Process --> [*]
+        }
+        Working --> Idle : done
+        --
+        [*] --> Listening
+        Listening --> Listening : tick
+    }
+    Active --> [*] : shutdown

@@ -1,0 +1,57 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "foo",
+    "label": "foo",
+    "text": "foo",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-foo-64",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "interface0",
+    "label": "bar",
+    "isGroup": false,
+    "shape": "rect",
+    "cssStyles": [
+     "opacity: 0;"
+    ],
+    "look": "classic"
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_interface0_foo_1",
+    "start": "interface0",
+    "end": "foo",
+    "type": "normal",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "lollipop",
+    "arrowTypeEnd": "none",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

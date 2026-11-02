@@ -1,0 +1,71 @@
+{
+ "type": "flowchart-v2",
+ "data": {
+  "nodes": [
+   {
+    "id": "id1",
+    "label": "Start",
+    "labelType": "text",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [
+     "fill:#f9f",
+     "stroke:#333",
+     "stroke-width:4px"
+    ],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-id1-0",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "roundedRect",
+    "minWidth": 120
+   },
+   {
+    "id": "id2",
+    "label": "Stop",
+    "labelType": "text",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [
+     "fill:#bbf",
+     "stroke:#f66",
+     "stroke-width:2px",
+     "color:#fff",
+     "stroke-dasharray: 5 5"
+    ],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-id2-1",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "roundedRect",
+    "minWidth": 120
+   }
+  ],
+  "edges": [
+   {
+    "id": "L_id1_id2_0",
+    "isUserDefinedId": false,
+    "start": "id1",
+    "end": "id2",
+    "type": "arrow_point",
+    "label": "",
+    "labelType": "text",
+    "labelpos": "c",
+    "thickness": "normal",
+    "minlen": 1,
+    "classes": "edge-thickness-normal edge-pattern-solid flowchart-link",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "arrow_point",
+    "arrowheadStyle": "fill: #333",
+    "cssCompiledStyles": [],
+    "labelStyle": [],
+    "pattern": "normal",
+    "look": "classic",
+    "curve": "basis"
+   }
+  ],
+  "other": {}
+ }
+}

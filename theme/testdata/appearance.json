@@ -1,0 +1,46 @@
+{
+ "": {
+  "theme": "default",
+  "look": "classic"
+ },
+ "flowchart": {
+  "theme": "redux-color",
+  "look": "neo"
+ },
+ "swimlane": {
+  "theme": "redux-color",
+  "look": "neo"
+ },
+ "agentflow": {
+  "theme": "redux-color",
+  "look": "neo"
+ },
+ "sequence": {
+  "theme": "redux-color",
+  "look": "neo"
+ },
+ "class": {
+  "theme": "redux-color",
+  "look": "neo"
+ },
+ "state": {
+  "theme": "redux-color",
+  "look": "neo"
+ },
+ "er": {
+  "theme": "redux-color",
+  "look": "neo"
+ },
+ "requirement": {
+  "theme": "redux-color",
+  "look": "neo"
+ },
+ "usecase": {
+  "theme": "redux-color",
+  "look": "neo"
+ },
+ "venn": {
+  "theme": "redux-color",
+  "look": "neo"
+ }
+}

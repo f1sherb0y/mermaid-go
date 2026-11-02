@@ -1,0 +1,96 @@
+{
+ "type": "flowchart-v2",
+ "data": {
+  "nodes": [
+   {
+    "id": "one",
+    "label": "My Group",
+    "labelStyle": "",
+    "labelType": "text",
+    "padding": 8,
+    "cssCompiledStyles": [],
+    "cssClasses": "",
+    "shape": "collapsedGroup",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0,
+    "cssStyles": []
+   },
+   {
+    "id": "Start",
+    "label": "Start",
+    "labelType": "text",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-Start-0",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "squareRect",
+    "minWidth": 120
+   },
+   {
+    "id": "End",
+    "label": "End",
+    "labelType": "text",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-End-7",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "squareRect",
+    "minWidth": 120
+   }
+  ],
+  "edges": [
+   {
+    "id": "L_Start_one_0",
+    "isUserDefinedId": false,
+    "start": "Start",
+    "end": "one",
+    "type": "arrow_point",
+    "label": "",
+    "labelType": "text",
+    "labelpos": "c",
+    "thickness": "normal",
+    "minlen": 1,
+    "classes": "edge-thickness-normal edge-pattern-solid flowchart-link",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "arrow_point",
+    "arrowheadStyle": "fill: #333",
+    "cssCompiledStyles": [],
+    "labelStyle": [],
+    "pattern": "normal",
+    "look": "classic",
+    "curve": "basis"
+   },
+   {
+    "id": "L_one_End_0",
+    "isUserDefinedId": false,
+    "start": "one",
+    "end": "End",
+    "type": "arrow_point",
+    "label": "",
+    "labelType": "text",
+    "labelpos": "c",
+    "thickness": "normal",
+    "minlen": 1,
+    "classes": "edge-thickness-normal edge-pattern-solid flowchart-link",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "arrow_point",
+    "arrowheadStyle": "fill: #333",
+    "cssCompiledStyles": [],
+    "labelStyle": [],
+    "pattern": "normal",
+    "look": "classic",
+    "curve": "basis"
+   }
+  ],
+  "other": {}
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "type": "flowchart-v2",
+ "data": {
+  "nodes": [
+   {
+    "id": "A",
+    "label": "Multiple documents",
+    "labelType": "markdown",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-A-0",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "docs",
+    "minWidth": 120
+   }
+  ],
+  "edges": [],
+  "other": {}
+ }
+}

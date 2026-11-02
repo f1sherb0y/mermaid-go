@@ -1,0 +1,55 @@
+{
+ "type": "er",
+ "data": {
+  "nodes": [
+   {
+    "id": "entity-many-to-many-0",
+    "label": "many-to-many",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 0,
+    "isGroup": false
+   },
+   {
+    "id": "entity-R-1",
+    "label": "R",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 1,
+    "isGroup": false
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_entity-many-to-many-0_entity-R-1_0",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-many-to-many-0",
+    "end": "entity-R-1",
+    "label": "w",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "zero_or_one",
+    "arrowTypeEnd": "zero_or_one",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

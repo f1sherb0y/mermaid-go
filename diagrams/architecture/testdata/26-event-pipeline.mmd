@@ -1,0 +1,23 @@
+architecture-beta
+    group producers(server)[Producers]
+    group streaming(cloud)[Streaming]
+    group consumers(server)[Consumers]
+
+    service orders(server)[Orders] in producers
+    service clicks(internet)[Clickstream] in producers
+    service iot(server)[IoT Devices] in producers
+    service kafka(disk)[Kafka] in streaming
+    service registry(database)[Schema Registry] in streaming
+    service flink(server)[Flink] in consumers
+    service lake(disk)[Data Lake] in consumers
+    service dash(server)[Dashboards] in consumers
+
+    orders:R --> L:kafka
+    clicks:R --> L:kafka
+    iot:R --> L:kafka
+    kafka:B -- T:registry
+    kafka:R --> L:flink
+    flink:R --> L:lake
+    flink:B --> T:dash
+
+    align column orders clicks iot

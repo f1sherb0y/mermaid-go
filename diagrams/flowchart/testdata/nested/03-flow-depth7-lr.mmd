@@ -1,0 +1,72 @@
+flowchart LR
+  subgraph s["Level 1 s"]
+    sa[s a] --> sb(s b)
+    subgraph sx["Level 2 sx"]
+      sxa[sx a] --> sxb(sx b)
+      subgraph sxx["Level 3 sxx"]
+        sxxa[sxx a] --> sxxb(sxx b)
+        subgraph sxxx["Level 4 sxxx"]
+          sxxxa[sxxx a] --> sxxxb(sxxx b)
+          subgraph sxxxx["Level 5 sxxxx"]
+            sxxxxa[sxxxx a] --> sxxxxb(sxxxx b)
+            subgraph sxxxxx["Level 6 sxxxxx"]
+              sxxxxxa[sxxxxx a] --> sxxxxxb(sxxxxx b)
+              subgraph sxxxxxx["Level 7 sxxxxxx"]
+                sxxxxxxa[sxxxxxx a] --> sxxxxxxb(sxxxxxx b)
+              end
+              subgraph sxxxxxy["Level 7 sxxxxxy"]
+                sxxxxxya[sxxxxxy a] --> sxxxxxyb(sxxxxxy b)
+              end
+            end
+          end
+          subgraph sxxxy["Level 5 sxxxy"]
+            sxxxya[sxxxy a] --> sxxxyb(sxxxy b)
+            subgraph sxxxyx["Level 6 sxxxyx"]
+              sxxxyxa[sxxxyx a] --> sxxxyxb(sxxxyx b)
+              subgraph sxxxyxx["Level 7 sxxxyxx"]
+                sxxxyxxa[sxxxyxx a] --> sxxxyxxb(sxxxyxx b)
+              end
+              subgraph sxxxyxy["Level 7 sxxxyxy"]
+                sxxxyxya[sxxxyxy a] --> sxxxyxyb(sxxxyxy b)
+              end
+            end
+          end
+        end
+      end
+      subgraph sxy["Level 3 sxy"]
+        sxya[sxy a] --> sxyb(sxy b)
+        subgraph sxyx["Level 4 sxyx"]
+          sxyxa[sxyx a] --> sxyxb(sxyx b)
+          subgraph sxyxx["Level 5 sxyxx"]
+            sxyxxa[sxyxx a] --> sxyxxb(sxyxx b)
+            subgraph sxyxxx["Level 6 sxyxxx"]
+              sxyxxxa[sxyxxx a] --> sxyxxxb(sxyxxx b)
+              subgraph sxyxxxx["Level 7 sxyxxxx"]
+                sxyxxxxa[sxyxxxx a] --> sxyxxxxb(sxyxxxx b)
+              end
+              subgraph sxyxxxy["Level 7 sxyxxxy"]
+                sxyxxxya[sxyxxxy a] --> sxyxxxyb(sxyxxxy b)
+              end
+            end
+          end
+          subgraph sxyxy["Level 5 sxyxy"]
+            sxyxya[sxyxy a] --> sxyxyb(sxyxy b)
+            subgraph sxyxyx["Level 6 sxyxyx"]
+              sxyxyxa[sxyxyx a] --> sxyxyxb(sxyxyx b)
+              subgraph sxyxyxx["Level 7 sxyxyxx"]
+                sxyxyxxa[sxyxyxx a] --> sxyxyxxb(sxyxyxx b)
+              end
+              subgraph sxyxyxy["Level 7 sxyxyxy"]
+                sxyxyxya[sxyxyxy a] --> sxyxyxyb(sxyxyxy b)
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  start((start)) --> sa
+  sxxxxxxb --> sb
+  sxa -- "cross level" --> sxxxxxxa
+  sxxxxxxb -.-> out{done?}
+  s --> out

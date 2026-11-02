@@ -1,0 +1,152 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Class01",
+    "label": "Class01",
+    "text": "Class01",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "",
+      "classifier": "",
+      "text": "draw()",
+      "id": "draw",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "",
+      "classifier": "",
+      "text": "int amount",
+      "id": "int amount"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Class01-65",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Class02",
+    "label": "Class02",
+    "text": "Class02",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Class02-66",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 1
+   },
+   {
+    "id": "interface0",
+    "label": "bar",
+    "isGroup": false,
+    "shape": "rect",
+    "cssStyles": [
+     "opacity: 0;"
+    ],
+    "look": "classic"
+   },
+   {
+    "id": "interface1",
+    "label": "bar",
+    "isGroup": false,
+    "shape": "rect",
+    "cssStyles": [
+     "opacity: 0;"
+    ],
+    "look": "classic"
+   },
+   {
+    "id": "interface2",
+    "label": "foo",
+    "isGroup": false,
+    "shape": "rect",
+    "cssStyles": [
+     "opacity: 0;"
+    ],
+    "look": "classic"
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_Class01_interface0_1",
+    "start": "Class01",
+    "end": "interface0",
+    "type": "normal",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "lollipop",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_Class02_interface1_2",
+    "start": "Class02",
+    "end": "interface1",
+    "type": "normal",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "lollipop",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_interface2_Class01_3",
+    "start": "interface2",
+    "end": "Class01",
+    "type": "normal",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "lollipop",
+    "arrowTypeEnd": "none",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Animal",
+    "label": "Animal",
+    "text": "Animal",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Animal-13",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Vehicle",
+    "label": "Vehicle",
+    "text": "Vehicle",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Vehicle-14",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 1
+   },
+   {
+    "id": "Car",
+    "label": "Car",
+    "text": "Car",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Car-15",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 2
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_Vehicle_Car_1",
+    "start": "Vehicle",
+    "end": "Car",
+    "type": "normal",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "extension",
+    "arrowTypeEnd": "none",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

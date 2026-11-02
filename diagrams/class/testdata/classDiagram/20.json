@@ -1,0 +1,175 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Company",
+    "label": "Company",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic"
+   },
+   {
+    "id": "Company.Engineering",
+    "label": "Engineering",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic",
+    "parentId": "Company"
+   },
+   {
+    "id": "Company.Engineering.Backend",
+    "label": "Backend",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic",
+    "parentId": "Company.Engineering"
+   },
+   {
+    "id": "Company.Engineering.Frontend",
+    "label": "Frontend",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic",
+    "parentId": "Company.Engineering"
+   },
+   {
+    "id": "Developer",
+    "label": "Developer",
+    "text": "Developer",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+writeCode()",
+      "id": "writeCode",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Developer-70",
+    "parent": "Company.Engineering.Backend",
+    "isGroup": false,
+    "parentId": "Company.Engineering.Backend",
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Designer",
+    "label": "Designer",
+    "text": "Designer",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+createMockup()",
+      "id": "createMockup",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Designer-71",
+    "parent": "Company.Engineering.Frontend",
+    "isGroup": false,
+    "parentId": "Company.Engineering.Frontend",
+    "look": "classic",
+    "colorIndex": 1
+   },
+   {
+    "id": "TechLead",
+    "label": "TechLead",
+    "text": "TechLead",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+planSprint()",
+      "id": "planSprint",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-TechLead-72",
+    "parent": "Company.Engineering",
+    "isGroup": false,
+    "parentId": "Company.Engineering",
+    "look": "classic",
+    "colorIndex": 2
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_TechLead_Developer_1",
+    "start": "TechLead",
+    "end": "Developer",
+    "type": "normal",
+    "label": "leads",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "dependency",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_TechLead_Designer_2",
+    "start": "TechLead",
+    "end": "Designer",
+    "type": "normal",
+    "label": "leads",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "dependency",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

@@ -1,0 +1,239 @@
+{
+ "type": "er",
+ "data": {
+  "nodes": [
+   {
+    "id": "entity-A-0",
+    "label": "A",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 0,
+    "isGroup": false
+   },
+   {
+    "id": "entity-C-1",
+    "label": "C",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 1,
+    "isGroup": false
+   },
+   {
+    "id": "entity-2.5-2",
+    "label": "2.5",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 2,
+    "isGroup": false
+   },
+   {
+    "id": "entity-3-3",
+    "label": "3",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 3,
+    "isGroup": false
+   },
+   {
+    "id": "entity-X-4",
+    "label": "X",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 4,
+    "isGroup": false
+   },
+   {
+    "id": "entity-Y-5",
+    "label": "Y",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 5,
+    "isGroup": false
+   },
+   {
+    "id": "entity-P-6",
+    "label": "P",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 6,
+    "isGroup": false
+   },
+   {
+    "id": "entity-Q-7",
+    "label": "Q",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 7,
+    "isGroup": false
+   },
+   {
+    "id": "entity-T-8",
+    "label": "T",
+    "attributes": [
+     {
+      "type": "List~int~",
+      "name": "items",
+      "keys": [
+       "pk"
+      ],
+      "comment": "list, of #ints"
+     },
+     {
+      "type": "weird type",
+      "name": "my name",
+      "keys": [
+       "FK",
+       "UK"
+      ],
+      "comment": ""
+     },
+     {
+      "type": "string?",
+      "name": "opt",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "int",
+      "name": "*id",
+      "keys": [
+       "PK"
+      ],
+      "comment": ""
+     },
+     {
+      "type": "string(9),x[]",
+      "name": "y",
+      "keys": [],
+      "comment": ""
+     }
+    ],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 8,
+    "isGroup": false
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_entity-A-0_entity-C-1_0",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-A-0",
+    "end": "entity-C-1",
+    "label": "y",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "md_parent",
+    "arrowTypeEnd": "only_one",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_entity-2.5-2_entity-3-3_1",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-2.5-2",
+    "end": "entity-3-3",
+    "label": "z",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "one_or_more",
+    "arrowTypeEnd": "only_one",
+    "pattern": "dashed",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_entity-X-4_entity-Y-5_2",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-X-4",
+    "end": "entity-Y-5",
+    "label": "uno",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "only_one",
+    "arrowTypeEnd": "only_one",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_entity-P-6_entity-Q-7_3",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-P-6",
+    "end": "entity-Q-7",
+    "label": "two words",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "only_one",
+    "arrowTypeEnd": "only_one",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

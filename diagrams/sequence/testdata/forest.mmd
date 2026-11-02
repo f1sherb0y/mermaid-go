@@ -1,0 +1,13 @@
+---
+config:
+  theme: forest
+---
+sequenceDiagram
+    actor U as User
+    participant S@{ "type": "entity" } as Store
+    U->>+S: buy
+    loop retry
+      S-->>S: check
+    end
+    Note over U: thinking
+    S-->>-U: ok

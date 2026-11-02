@@ -1,0 +1,15 @@
+C4Container
+  title Nested boundaries
+  Person(user, "User")
+  Enterprise_Boundary(e, "Enterprise") {
+    System_Boundary(s, "System") {
+      Container_Boundary(c, "Backend") {
+        Container(api, "API", "Go")
+        ContainerDb(db, "DB", "Postgres")
+      }
+      Container(web, "Web", "TS")
+    }
+  }
+  Rel(user, web, "Uses")
+  Rel(web, api, "Calls")
+  Rel(api, db, "Reads")

@@ -1,0 +1,75 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "MyClass",
+    "label": "MyClass",
+    "text": "MyClass",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-MyClass-93",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "note0",
+    "label": "This is a general note",
+    "isGroup": false,
+    "shape": "note",
+    "padding": 6,
+    "cssStyles": [
+     "text-align: left",
+     "white-space: nowrap",
+     "fill: #fff5ad",
+     "stroke: #aaaa33"
+    ],
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "note1",
+    "label": "This is a note for a class",
+    "isGroup": false,
+    "shape": "note",
+    "padding": 6,
+    "cssStyles": [
+     "text-align: left",
+     "white-space: nowrap",
+     "fill: #fff5ad",
+     "stroke: #aaaa33"
+    ],
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "edges": [
+   {
+    "id": "edgeNote1",
+    "start": "note1",
+    "end": "MyClass",
+    "type": "normal",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "none",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     ""
+    ],
+    "style": [
+     "fill: none"
+    ],
+    "pattern": "dotted",
+    "look": "classic"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

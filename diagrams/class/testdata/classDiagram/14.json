@@ -1,0 +1,167 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "classA",
+    "label": "classA",
+    "text": "classA",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-classA-56",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "classB",
+    "label": "classB",
+    "text": "classB",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-classB-57",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 1
+   },
+   {
+    "id": "classC",
+    "label": "classC",
+    "text": "classC",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-classC-58",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 2
+   },
+   {
+    "id": "classD",
+    "label": "classD",
+    "text": "classD",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-classD-59",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 3
+   },
+   {
+    "id": "classE",
+    "label": "classE",
+    "text": "classE",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-classE-60",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 4
+   },
+   {
+    "id": "classF",
+    "label": "classF",
+    "text": "classF",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-classF-61",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 5
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_classA_classB_1",
+    "start": "classA",
+    "end": "classB",
+    "type": "normal",
+    "label": "implements",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "extension",
+    "arrowTypeEnd": "none",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_classC_classD_2",
+    "start": "classC",
+    "end": "classD",
+    "type": "normal",
+    "label": "composition",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "composition",
+    "arrowTypeEnd": "none",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_classE_classF_3",
+    "start": "classE",
+    "end": "classF",
+    "type": "normal",
+    "label": "aggregation",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "aggregation",
+    "arrowTypeEnd": "none",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

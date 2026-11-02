@@ -1,0 +1,75 @@
+{
+ "type": "er",
+ "data": {
+  "nodes": [
+   {
+    "id": "entity-p-0",
+    "label": "p",
+    "attributes": [
+     {
+      "type": "string",
+      "name": "firstName",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "string",
+      "name": "lastName",
+      "keys": [],
+      "comment": ""
+     }
+    ],
+    "alias": "Person",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 0,
+    "isGroup": false
+   },
+   {
+    "id": "entity-a-1",
+    "label": "a",
+    "attributes": [
+     {
+      "type": "string",
+      "name": "email",
+      "keys": [],
+      "comment": ""
+     }
+    ],
+    "alias": "Customer Account",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 1,
+    "isGroup": false
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_entity-p-0_entity-a-1_0",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-p-0",
+    "end": "entity-a-1",
+    "label": "has",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "only_one",
+    "arrowTypeEnd": "zero_or_one",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

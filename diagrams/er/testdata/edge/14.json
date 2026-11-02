@@ -1,0 +1,143 @@
+{
+ "type": "er",
+ "data": {
+  "nodes": [
+   {
+    "id": "entity-class-room-0",
+    "label": "class-room",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 0,
+    "isGroup": false
+   },
+   {
+    "id": "entity-student-1",
+    "label": "student",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 1,
+    "isGroup": false
+   },
+   {
+    "id": "entity-style-guide-2",
+    "label": "style-guide",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 2,
+    "isGroup": false
+   },
+   {
+    "id": "entity-subgraph-x-3",
+    "label": "subgraph-x",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 3,
+    "isGroup": false
+   },
+   {
+    "id": "entity-u-boat-4",
+    "label": "u-boat",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 4,
+    "isGroup": false
+   },
+   {
+    "id": "entity-many.x-5",
+    "label": "many.x",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 5,
+    "isGroup": false
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_entity-class-room-0_entity-student-1_0",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-class-room-0",
+    "end": "entity-student-1",
+    "label": "holds",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "only_one",
+    "arrowTypeEnd": "one_or_more",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_entity-style-guide-2_entity-subgraph-x-3_1",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-style-guide-2",
+    "end": "entity-subgraph-x-3",
+    "label": "x",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "only_one",
+    "arrowTypeEnd": "only_one",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_entity-u-boat-4_entity-many.x-5_2",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-u-boat-4",
+    "end": "entity-many.x-5",
+    "label": "y",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "only_one",
+    "arrowTypeEnd": "only_one",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

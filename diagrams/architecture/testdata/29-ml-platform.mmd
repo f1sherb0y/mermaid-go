@@ -1,0 +1,28 @@
+architecture-beta
+    group ingest(cloud)[Ingestion]
+    group train(server)[Training]
+    group serve(server)[Serving]
+    service src(database)[Source DBs] in ingest
+    service etl(server)[ETL] in ingest
+    service fs(disk)[Feature Store] in ingest
+    service gpu1(server)[GPU Node 1] in train
+    service gpu2(server)[GPU Node 2] in train
+    service gpu3(server)[GPU Node 3] in train
+    service reg(database)[Model Registry] in train
+    junction j1 in train
+    service api(server)[Inference API] in serve
+    service ab(server)[AB Router] in serve
+    service mon(server)[Drift Monitor] in serve
+    service client(internet)[Client]
+
+    src:R --> L:etl
+    etl:R --> L:fs
+    fs:B --> T:j1
+    j1:L --> R:gpu1
+    j1:B --> T:gpu2
+    j1:R --> L:gpu3
+    gpu2:B --> T:reg
+    reg:R --> L:api
+    client:B --> T:ab
+    ab:B --> T:api
+    api:R --> L:mon

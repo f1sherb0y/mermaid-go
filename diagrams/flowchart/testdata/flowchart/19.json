@@ -1,0 +1,24 @@
+{
+ "type": "flowchart-v2",
+ "data": {
+  "nodes": [
+   {
+    "id": "A",
+    "label": "Christmas",
+    "labelType": "text",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-A-0",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "trapezoid",
+    "minWidth": 120
+   }
+  ],
+  "edges": [],
+  "other": {}
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Shape",
+    "label": "Shape",
+    "text": "Shape",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [
+     "interface"
+    ],
+    "styles": [],
+    "domId": "classId-Shape-85",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "type": "er",
+ "data": {
+  "nodes": [
+   {
+    "id": "entity-id1-0",
+    "label": "id1",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [
+     "fill:#f9f",
+     "stroke:#333",
+     "stroke-width:4px"
+    ],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 0,
+    "isGroup": false
+   },
+   {
+    "id": "entity-id2-1",
+    "label": "id2",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [
+     "fill:#bbf",
+     "stroke:#f66",
+     "stroke-width:2px",
+     "color:#fff",
+     "stroke-dasharray:55"
+    ],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 1,
+    "isGroup": false
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_entity-id1-0_entity-id2-1_0",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-id1-0",
+    "end": "entity-id2-1",
+    "label": "label",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "only_one",
+    "arrowTypeEnd": "only_one",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

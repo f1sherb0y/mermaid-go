@@ -1,0 +1,21 @@
+sequenceDiagram
+    box rgb(240, 240, 255) wrap:The front end systems with a long title
+        actor U as User
+        participant W as Web
+    end
+    box hsl(120, 50%, 90%) Backend
+        participant S as Service
+        participant Q@{ "type": "queue" } as Jobs
+    end
+    participant Unused
+    U->>W: open
+    W->>S: call
+    create participant T as Temp
+    S->>T: spawn
+    create participant DBX@{ "type": "database" }
+    T->>DBX: write
+    destroy T
+    T-->>S: finished
+    S->>Q: enqueue
+    destroy DBX
+    S-xDBX: drop

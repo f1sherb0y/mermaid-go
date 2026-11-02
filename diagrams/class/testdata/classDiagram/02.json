@@ -1,0 +1,197 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Customer",
+    "label": "Customer",
+    "text": "Customer",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+String name",
+      "id": "String name"
+     },
+     {
+      "memberType": "attribute",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+String email",
+      "id": "String email"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Customer-4",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Order",
+    "label": "Order",
+    "text": "Order",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+total() : Money",
+      "id": "total",
+      "parameters": "",
+      "returnType": "Money"
+     }
+    ],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+String id",
+      "id": "String id"
+     },
+     {
+      "memberType": "attribute",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+Date placedAt",
+      "id": "Date placedAt"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Order-5",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 1
+   },
+   {
+    "id": "LineItem",
+    "label": "LineItem",
+    "text": "LineItem",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+int quantity",
+      "id": "int quantity"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-LineItem-6",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 2
+   },
+   {
+    "id": "Payment",
+    "label": "Payment",
+    "text": "Payment",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+authorise() : bool",
+      "id": "authorise",
+      "parameters": "",
+      "returnType": "bool"
+     }
+    ],
+    "members": [],
+    "annotations": [
+     "interface"
+    ],
+    "styles": [],
+    "domId": "classId-Payment-7",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 3
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_Customer_Order_1",
+    "start": "Customer",
+    "end": "Order",
+    "type": "normal",
+    "label": "places",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "dependency",
+    "startLabelRight": "1",
+    "endLabelLeft": "*",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_Order_LineItem_2",
+    "start": "Order",
+    "end": "LineItem",
+    "type": "normal",
+    "label": "contains",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "composition",
+    "arrowTypeEnd": "none",
+    "startLabelRight": "1",
+    "endLabelLeft": "*",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_Order_Payment_3",
+    "start": "Order",
+    "end": "Payment",
+    "type": "normal",
+    "label": "settled by",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "dependency",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

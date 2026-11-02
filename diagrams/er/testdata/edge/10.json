@@ -1,0 +1,130 @@
+{
+ "type": "er",
+ "data": {
+  "nodes": [
+   {
+    "id": "late",
+    "label": "late",
+    "labelStyle": "",
+    "labelType": "markdown",
+    "padding": 8,
+    "cssCompiledStyles": [],
+    "cssStyles": [],
+    "cssClasses": "",
+    "shape": "rect",
+    "isGroup": true,
+    "look": "classic"
+   },
+   {
+    "id": "outer",
+    "label": "outer",
+    "labelStyle": "",
+    "labelType": "markdown",
+    "parentId": "late",
+    "padding": 8,
+    "cssCompiledStyles": [],
+    "cssStyles": [],
+    "cssClasses": "",
+    "shape": "rect",
+    "isGroup": true,
+    "look": "classic"
+   },
+   {
+    "id": "inner",
+    "label": "inner",
+    "labelStyle": "",
+    "labelType": "markdown",
+    "parentId": "outer",
+    "padding": 8,
+    "cssCompiledStyles": [],
+    "cssStyles": [],
+    "cssClasses": "",
+    "shape": "rect",
+    "dir": "LR",
+    "isGroup": true,
+    "look": "classic"
+   },
+   {
+    "id": "entity-A-0",
+    "label": "A",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 0,
+    "parentId": "inner",
+    "isGroup": false
+   },
+   {
+    "id": "entity-B-1",
+    "label": "B",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 1,
+    "parentId": "inner",
+    "isGroup": false
+   },
+   {
+    "id": "entity-C-2",
+    "label": "C",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 2,
+    "parentId": "outer",
+    "isGroup": false
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_entity-A-0_entity-B-1_0",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-A-0",
+    "end": "entity-B-1",
+    "label": "r",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "only_one",
+    "arrowTypeEnd": "only_one",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_entity-A-0_outer_1",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-A-0",
+    "end": "outer",
+    "label": "r2",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "only_one",
+    "arrowTypeEnd": "only_one",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "RL"
+ }
+}

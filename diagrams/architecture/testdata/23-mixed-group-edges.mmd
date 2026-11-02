@@ -1,0 +1,23 @@
+architecture-beta
+    group frontend(internet)[Frontend]
+    group backend(server)[Backend]
+    group data(database)[Data]
+    group ops(cloud)[Observability]
+
+    service spa(internet)[SPA] in frontend
+    service ssr(server)[SSR] in frontend
+    service api(server)[API] in backend
+    service jobs(server)[Jobs] in backend
+    service db(database)[Primary DB] in data
+    service blob(disk)[Blob Store] in data
+    service logs(disk)[Logs] in ops
+    service metrics(server)[Metrics] in ops
+
+    spa:R -- L:ssr
+    api:R -- L:jobs
+    db:R -- L:blob
+    logs:R -- L:metrics
+    ssr{group}:B --> T:api{group}
+    jobs{group}:B --> T:blob{group}
+    api:B --> T:db
+    jobs{group}:R --> L:logs{group}

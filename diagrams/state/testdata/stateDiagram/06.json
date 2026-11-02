@@ -1,0 +1,30 @@
+{
+ "type": "stateDiagram",
+ "data": {
+  "nodes": [
+   {
+    "labelStyle": "",
+    "shape": "rect",
+    "label": "This is a state description",
+    "cssClasses": " statediagram-state",
+    "cssCompiledStyles": [],
+    "cssStyles": [],
+    "id": "s2",
+    "domId": "state-s2-0",
+    "isGroup": false,
+    "padding": 8,
+    "rx": 10,
+    "ry": 10,
+    "look": "classic",
+    "labelType": "markdown",
+    "centerLabel": true,
+    "description": [],
+    "wrappingWidth": 120,
+    "minWidth": 120
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

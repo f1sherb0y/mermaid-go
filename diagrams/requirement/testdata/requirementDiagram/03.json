@@ -1,0 +1,97 @@
+{
+ "type": "requirement",
+ "data": {
+  "nodes": [
+   {
+    "name": "checkout_req",
+    "type": "Requirement",
+    "requirementId": "1",
+    "text": "Orders must be payable online.",
+    "risk": "High",
+    "verifyMethod": "Test",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "id": "checkout_req",
+    "cssClasses": "default",
+    "shape": "requirementBox",
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "name": "payment_req",
+    "type": "Functional Requirement",
+    "requirementId": "1.1",
+    "text": "Card payments must be authorised.",
+    "risk": "High",
+    "verifyMethod": "Test",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "id": "payment_req",
+    "cssClasses": "default",
+    "shape": "requirementBox",
+    "look": "classic",
+    "colorIndex": 1
+   },
+   {
+    "name": "checkout_service",
+    "type": "service",
+    "docRef": "",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "shape": "requirementBox",
+    "look": "classic",
+    "id": "checkout_service",
+    "cssClasses": "default",
+    "colorIndex": 2
+   }
+  ],
+  "edges": [
+   {
+    "id": "checkout_req-payment_req-0",
+    "start": "checkout_req",
+    "end": "payment_req",
+    "label": "&lt;&lt;contains&gt;&gt;",
+    "classes": "relationshipLine",
+    "style": [
+     "fill:none",
+     ""
+    ],
+    "labelpos": "c",
+    "thickness": "normal",
+    "type": "normal",
+    "pattern": "normal",
+    "arrowTypeStart": "requirement_contains",
+    "arrowTypeEnd": "",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "checkout_service-payment_req-1",
+    "start": "checkout_service",
+    "end": "payment_req",
+    "label": "&lt;&lt;satisfies&gt;&gt;",
+    "classes": "relationshipLine",
+    "style": [
+     "fill:none",
+     "stroke-dasharray: 10,7"
+    ],
+    "labelpos": "c",
+    "thickness": "normal",
+    "type": "normal",
+    "pattern": "dashed",
+    "arrowTypeStart": "",
+    "arrowTypeEnd": "requirement_arrow",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

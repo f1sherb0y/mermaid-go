@@ -1,0 +1,38 @@
+{
+ "type": "er",
+ "data": {
+  "nodes": [
+   {
+    "id": "Customer Domain",
+    "label": "Customer Domain",
+    "labelStyle": "",
+    "labelType": "markdown",
+    "padding": 8,
+    "cssCompiledStyles": [],
+    "cssStyles": [],
+    "cssClasses": "",
+    "shape": "rect",
+    "isGroup": true,
+    "look": "classic"
+   },
+   {
+    "id": "entity-CUSTOMER-0",
+    "label": "CUSTOMER",
+    "attributes": [],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 0,
+    "parentId": "Customer Domain",
+    "isGroup": false
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

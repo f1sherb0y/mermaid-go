@@ -1,0 +1,18 @@
+architecture-beta
+    group web(internet)[Web Tier]
+    group app(server)[App Tier]
+    group data(database)[Data Tier]
+    group monitoring(cloud)[Monitoring]
+    service fe1(internet)[Frontend 1] in web
+    service fe2(internet)[Frontend 2] in web
+    service api1(server)[API 1] in app
+    service api2(server)[API 2] in app
+    service pg(database)[Postgres] in data
+    service redis(disk)[Redis] in data
+    service prom(server)[Prometheus] in monitoring
+    fe1:R -- L:fe2
+    api1:R -- L:api2
+    pg:R -- L:redis
+    fe1{group}:B --> T:api1{group}
+    api2{group}:B --> T:redis{group}
+    api2{group}:R --> L:prom{group}

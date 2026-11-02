@@ -1,0 +1,46 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Shape",
+    "label": "Shape",
+    "text": "Shape",
+    "shape": "classBox",
+    "cssClasses": "default clickable",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Shape-94",
+    "link": "https://www.github.com/",
+    "linkTarget": "_blank",
+    "tooltip": "This is a tooltip for a link",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Shape2",
+    "label": "Shape2",
+    "text": "Shape2",
+    "shape": "classBox",
+    "cssClasses": "default clickable",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Shape2-95",
+    "link": "https://www.github.com/",
+    "linkTarget": "_blank",
+    "tooltip": "This is a tooltip for a link",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 1
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

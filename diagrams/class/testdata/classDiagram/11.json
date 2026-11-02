@@ -1,0 +1,93 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Square",
+    "label": "Square",
+    "text": "Square&lt;Shape&gt;",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "",
+      "classifier": "",
+      "text": "setPoints(List&lt;int&gt; points)",
+      "id": "setPoints",
+      "parameters": "List~int~ points",
+      "returnType": ""
+     },
+     {
+      "memberType": "method",
+      "visibility": "",
+      "classifier": "",
+      "text": "getPoints() : List&lt;int&gt;",
+      "id": "getPoints",
+      "parameters": "",
+      "returnType": "List~int~"
+     },
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+setMessages(List&lt;string&gt; messages)",
+      "id": "setMessages",
+      "parameters": "List~string~ messages",
+      "returnType": ""
+     },
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+getMessages() : List&lt;string&gt;",
+      "id": "getMessages",
+      "parameters": "",
+      "returnType": "List~string~"
+     },
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+getDistanceMatrix() : List&lt;List&lt;int&gt;&gt;",
+      "id": "getDistanceMatrix",
+      "parameters": "",
+      "returnType": "List~List~int~~"
+     }
+    ],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "",
+      "classifier": "",
+      "text": "int id",
+      "id": "int id"
+     },
+     {
+      "memberType": "attribute",
+      "visibility": "",
+      "classifier": "",
+      "text": "List&lt;int&gt; position",
+      "id": "List~int~ position"
+     },
+     {
+      "memberType": "attribute",
+      "visibility": "-",
+      "classifier": "",
+      "text": "\\-List&lt;string&gt; messages",
+      "id": "List~string~ messages"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Square-23",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

@@ -1,0 +1,23 @@
+architecture-beta
+    service ingest1(server)[Collector 1]
+    service ingest2(server)[Collector 2]
+    service ingest3(server)[Collector 3]
+    junction fanin
+    service bus(server)[Event Bus]
+    junction fanout
+    service analytics(database)[Analytics]
+    service archive(disk)[Archive]
+    service alerts(server)[Alerts]
+    junction top
+    junction bottom
+
+    ingest1:R -- L:top
+    ingest2:R -- L:fanin
+    ingest3:R -- L:bottom
+    top:B -- T:fanin
+    bottom:T -- B:fanin
+    fanin:R --> L:bus
+    bus:R -- L:fanout
+    fanout:T --> L:analytics
+    fanout:R --> L:archive
+    fanout:B --> L:alerts

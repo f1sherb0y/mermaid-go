@@ -1,0 +1,183 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Platform",
+    "label": "Platform",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic"
+   },
+   {
+    "id": "Platform.Auth",
+    "label": "Auth",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic",
+    "parentId": "Platform"
+   },
+   {
+    "id": "Platform.Data",
+    "label": "Data",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic",
+    "parentId": "Platform"
+   },
+   {
+    "id": "UserService",
+    "label": "UserService",
+    "text": "UserService",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+login()",
+      "id": "login",
+      "parameters": "",
+      "returnType": ""
+     },
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+logout()",
+      "id": "logout",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-UserService-73",
+    "parent": "Platform.Auth",
+    "isGroup": false,
+    "parentId": "Platform.Auth",
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Repository",
+    "label": "Repository",
+    "text": "Repository",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+find()",
+      "id": "find",
+      "parameters": "",
+      "returnType": ""
+     },
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+save()",
+      "id": "save",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Repository-74",
+    "parent": "Platform.Data",
+    "isGroup": false,
+    "parentId": "Platform.Data",
+    "look": "classic",
+    "colorIndex": 1
+   },
+   {
+    "id": "Gateway",
+    "label": "Gateway",
+    "text": "Gateway",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+route()",
+      "id": "route",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Gateway-75",
+    "parent": "Platform",
+    "isGroup": false,
+    "parentId": "Platform",
+    "look": "classic",
+    "colorIndex": 2
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_Gateway_UserService_1",
+    "start": "Gateway",
+    "end": "UserService",
+    "type": "normal",
+    "label": "delegates",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "dependency",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_Gateway_Repository_2",
+    "start": "Gateway",
+    "end": "Repository",
+    "type": "normal",
+    "label": "delegates",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "dependency",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

@@ -1,0 +1,16 @@
+architecture-beta
+    group backend(cloud)[Backend]
+    service lb(internet)[Load Balancer]
+    service w1(server)[Worker 1] in backend
+    service w2(server)[Worker 2] in backend
+    service w3(server)[Worker 3] in backend
+    service w4(server)[Worker 4] in backend
+    service db(database)[DB] in backend
+    lb:R --> L:w1
+    lb:R --> L:w2
+    lb:R --> L:w3
+    lb:R --> L:w4
+    w1:R --> L:db
+    w2:R --> L:db
+    w3:R --> L:db
+    w4:R --> L:db

@@ -1,0 +1,9 @@
+architecture-beta
+    service client(internet)[Client]
+    service api(server)[API Gateway]
+    service db(database)[Primary Database]
+    service cache(disk)[Cache]
+
+    client:R -["HTTPS requests from browsers"]-> L:api
+    api:R -[SQL queries over TLS]-> L:db
+    api:B <-[read through cache]- T:cache

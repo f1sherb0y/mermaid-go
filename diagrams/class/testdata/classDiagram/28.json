@@ -1,0 +1,138 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Student",
+    "label": "Student",
+    "text": "Student",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "-",
+      "classifier": "",
+      "text": "\\-idCard : IdCard",
+      "id": "idCard : IdCard"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Student-90",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "IdCard",
+    "label": "IdCard",
+    "text": "IdCard",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "-",
+      "classifier": "",
+      "text": "\\-id : int",
+      "id": "id : int"
+     },
+     {
+      "memberType": "attribute",
+      "visibility": "-",
+      "classifier": "",
+      "text": "\\-name : string",
+      "id": "name : string"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-IdCard-91",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 1
+   },
+   {
+    "id": "Bike",
+    "label": "Bike",
+    "text": "Bike",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "-",
+      "classifier": "",
+      "text": "\\-id : int",
+      "id": "id : int"
+     },
+     {
+      "memberType": "attribute",
+      "visibility": "-",
+      "classifier": "",
+      "text": "\\-name : string",
+      "id": "name : string"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Bike-92",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 2
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_Student_IdCard_1",
+    "start": "Student",
+    "end": "IdCard",
+    "type": "normal",
+    "label": "carries",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "aggregation",
+    "startLabelRight": "1",
+    "endLabelLeft": "1",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_Student_Bike_2",
+    "start": "Student",
+    "end": "Bike",
+    "type": "normal",
+    "label": "rides",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "aggregation",
+    "startLabelRight": "1",
+    "endLabelLeft": "1",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "RL"
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Shape",
+    "label": "Shape",
+    "text": "Shape",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "",
+      "classifier": "",
+      "text": "draw()",
+      "id": "draw",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "",
+      "classifier": "",
+      "text": "noOfVertices",
+      "id": "noOfVertices"
+     }
+    ],
+    "annotations": [
+     "interface"
+    ],
+    "styles": [],
+    "domId": "classId-Shape-86",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

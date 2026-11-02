@@ -1,0 +1,19 @@
+requirementDiagram
+    REQUIREMENT "Req One" {
+        ID: 1
+        Text: "first, text"
+        risk: Low
+        risk: High
+        VERIFYMETHOD: Inspection
+    }
+    element E1 {
+        type: "simulation"
+        docRef: docs/y
+    }
+    "Req One" <- traces - E1
+    E1 - contains -> missing
+    E1:::hot
+    class "Req One" hot,cold
+    classDef hot fill:#f00,stroke-width:4px
+    classDef cold color:red
+    style nothere,E1 fill:#ff0

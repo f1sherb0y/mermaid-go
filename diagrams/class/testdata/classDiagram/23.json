@@ -1,0 +1,165 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Customer",
+    "label": "Customer",
+    "text": "Customer",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Customer-79",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Ticket",
+    "label": "Ticket",
+    "text": "Ticket",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Ticket-80",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 1
+   },
+   {
+    "id": "Student",
+    "label": "Student",
+    "text": "Student",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Student-81",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 2
+   },
+   {
+    "id": "Course",
+    "label": "Course",
+    "text": "Course",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Course-82",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 3
+   },
+   {
+    "id": "Galaxy",
+    "label": "Galaxy",
+    "text": "Galaxy",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Galaxy-83",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 4
+   },
+   {
+    "id": "Star",
+    "label": "Star",
+    "text": "Star",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Star-84",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 5
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_Customer_Ticket_1",
+    "start": "Customer",
+    "end": "Ticket",
+    "type": "normal",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "dependency",
+    "startLabelRight": "1",
+    "endLabelLeft": "*",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_Student_Course_2",
+    "start": "Student",
+    "end": "Course",
+    "type": "normal",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "dependency",
+    "startLabelRight": "1",
+    "endLabelLeft": "1..*",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_Galaxy_Star_3",
+    "start": "Galaxy",
+    "end": "Star",
+    "type": "normal",
+    "label": "Contains",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "dependency",
+    "startLabelRight": "",
+    "endLabelLeft": "many",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

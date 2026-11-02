@@ -1,0 +1,61 @@
+{
+ "type": "requirement",
+ "data": {
+  "nodes": [
+   {
+    "name": "用户需求",
+    "type": "Requirement",
+    "requirementId": "1",
+    "text": "用户可以登录",
+    "risk": "",
+    "verifyMethod": "",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "id": "用户需求",
+    "cssClasses": "default",
+    "shape": "requirementBox",
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "name": "登录模块",
+    "type": "模块",
+    "docRef": "docs/a-b.md",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "shape": "requirementBox",
+    "look": "classic",
+    "id": "登录模块",
+    "cssClasses": "default",
+    "colorIndex": 1
+   }
+  ],
+  "edges": [
+   {
+    "id": "登录模块-用户需求-0",
+    "start": "登录模块",
+    "end": "用户需求",
+    "label": "&lt;&lt;satisfies&gt;&gt;",
+    "classes": "relationshipLine",
+    "style": [
+     "fill:none",
+     "stroke-dasharray: 10,7"
+    ],
+    "labelpos": "c",
+    "thickness": "normal",
+    "type": "normal",
+    "pattern": "dashed",
+    "arrowTypeStart": "",
+    "arrowTypeEnd": "requirement_arrow",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

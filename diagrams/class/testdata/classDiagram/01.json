@@ -1,0 +1,280 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Animal",
+    "label": "Animal",
+    "text": "Animal",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+isMammal()",
+      "id": "isMammal",
+      "parameters": "",
+      "returnType": ""
+     },
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+mate()",
+      "id": "mate",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+int age",
+      "id": "int age"
+     },
+     {
+      "memberType": "attribute",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+String gender",
+      "id": "String gender"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Animal-0",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Duck",
+    "label": "Duck",
+    "text": "Duck",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+swim()",
+      "id": "swim",
+      "parameters": "",
+      "returnType": ""
+     },
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+quack()",
+      "id": "quack",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+String beakColor",
+      "id": "String beakColor"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Duck-1",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 1
+   },
+   {
+    "id": "Fish",
+    "label": "Fish",
+    "text": "Fish",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "-",
+      "classifier": "",
+      "text": "\\-canEat()",
+      "id": "canEat",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "-",
+      "classifier": "",
+      "text": "\\-int sizeInFeet",
+      "id": "int sizeInFeet"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Fish-2",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 2
+   },
+   {
+    "id": "Zebra",
+    "label": "Zebra",
+    "text": "Zebra",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+run()",
+      "id": "run",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+bool is_wild",
+      "id": "bool is_wild"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Zebra-3",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 3
+   },
+   {
+    "id": "note0",
+    "label": "From Duck till Zebra",
+    "isGroup": false,
+    "shape": "note",
+    "padding": 6,
+    "cssStyles": [
+     "text-align: left",
+     "white-space: nowrap",
+     "fill: #fff5ad",
+     "stroke: #aaaa33"
+    ],
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "note1",
+    "label": "can fly<br>can swim<br>can dive<br>can help in debugging",
+    "isGroup": false,
+    "shape": "note",
+    "padding": 6,
+    "cssStyles": [
+     "text-align: left",
+     "white-space: nowrap",
+     "fill: #fff5ad",
+     "stroke: #aaaa33"
+    ],
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "edges": [
+   {
+    "id": "edgeNote1",
+    "start": "note1",
+    "end": "Duck",
+    "type": "normal",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "none",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     ""
+    ],
+    "style": [
+     "fill: none"
+    ],
+    "pattern": "dotted",
+    "look": "classic"
+   },
+   {
+    "id": "id_Animal_Duck_1",
+    "start": "Animal",
+    "end": "Duck",
+    "type": "normal",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "extension",
+    "arrowTypeEnd": "none",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_Animal_Fish_2",
+    "start": "Animal",
+    "end": "Fish",
+    "type": "normal",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "extension",
+    "arrowTypeEnd": "none",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_Animal_Zebra_3",
+    "start": "Animal",
+    "end": "Zebra",
+    "type": "normal",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "extension",
+    "arrowTypeEnd": "none",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

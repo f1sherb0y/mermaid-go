@@ -1,0 +1,19 @@
+architecture-beta
+    group l1(cloud)[Level 1]
+    group l2(cloud)[Level 2] in l1
+    group l3(server)[Level 3] in l2
+    group l4(database)[Level 4] in l3
+    group l5[Level 5] in l4
+    service a(internet)[Outside]
+    service b(server)[In L1] in l1
+    service c(server)[In L2] in l2
+    service d(server)[In L3] in l3
+    service e(database)[In L4] in l4
+    service f(disk)[In L5] in l5
+    service g(disk)[Also L5] in l5
+    a:R --> L:b
+    b:R --> L:c
+    c:R --> L:d
+    d:B --> T:e
+    e:R --> L:f
+    f:R --> L:g

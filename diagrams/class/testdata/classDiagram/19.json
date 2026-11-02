@@ -1,0 +1,55 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Auth",
+    "label": "Authentication Service",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic"
+   },
+   {
+    "id": "UserService",
+    "label": "UserService",
+    "text": "UserService",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+login()",
+      "id": "login",
+      "parameters": "",
+      "returnType": ""
+     },
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+logout()",
+      "id": "logout",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-UserService-69",
+    "parent": "Auth",
+    "isGroup": false,
+    "parentId": "Auth",
+    "look": "classic",
+    "colorIndex": 0
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

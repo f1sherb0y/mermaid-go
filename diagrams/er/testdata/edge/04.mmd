@@ -1,0 +1,14 @@
+erDiagram
+    subgraph S1 [Sales area 1]
+        A
+        B
+    end
+    subgraph S2
+        B
+        C
+    end
+    style S1 fill:#eee
+    class S2 hot
+    classDef hot fill:#f00,color:#fff
+    S1 ||--o{ S2 : feeds
+    style A stroke:#00f

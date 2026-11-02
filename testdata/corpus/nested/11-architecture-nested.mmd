@@ -1,0 +1,9 @@
+architecture-beta
+  group cloud(cloud)[Cloud]
+  group region(cloud)[Region] in cloud
+  group vpc(server)[VPC] in region
+  service api(server)[API] in vpc
+  service db(database)[DB] in vpc
+  service cdn(internet)[CDN] in cloud
+  cdn:R --> L:api
+  api:R --> L:db

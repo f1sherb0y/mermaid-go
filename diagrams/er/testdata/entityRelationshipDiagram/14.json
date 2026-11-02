@@ -1,0 +1,136 @@
+{
+ "type": "er",
+ "data": {
+  "nodes": [
+   {
+    "id": "entity-CUSTOMER-0",
+    "label": "CUSTOMER",
+    "attributes": [
+     {
+      "type": "string",
+      "name": "name",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "string",
+      "name": "custNumber",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "string",
+      "name": "sector",
+      "keys": [],
+      "comment": ""
+     }
+    ],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 0,
+    "isGroup": false
+   },
+   {
+    "id": "entity-ORDER-1",
+    "label": "ORDER",
+    "attributes": [
+     {
+      "type": "int",
+      "name": "orderNumber",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "string",
+      "name": "deliveryAddress",
+      "keys": [],
+      "comment": ""
+     }
+    ],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 1,
+    "isGroup": false
+   },
+   {
+    "id": "entity-LINE-ITEM-2",
+    "label": "LINE-ITEM",
+    "attributes": [
+     {
+      "type": "string",
+      "name": "productCode",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "int",
+      "name": "quantity",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "float",
+      "name": "pricePerUnit",
+      "keys": [],
+      "comment": ""
+     }
+    ],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 2,
+    "isGroup": false
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_entity-CUSTOMER-0_entity-ORDER-1_0",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-CUSTOMER-0",
+    "end": "entity-ORDER-1",
+    "label": "places",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "only_one",
+    "arrowTypeEnd": "zero_or_more",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_entity-ORDER-1_entity-LINE-ITEM-2_1",
+    "type": "normal",
+    "curve": "basis",
+    "start": "entity-ORDER-1",
+    "end": "entity-LINE-ITEM-2",
+    "label": "contains",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relationshipLine",
+    "arrowTypeStart": "only_one",
+    "arrowTypeEnd": "one_or_more",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "LR"
+ }
+}

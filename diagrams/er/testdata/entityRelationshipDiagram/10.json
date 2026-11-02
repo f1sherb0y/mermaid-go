@@ -1,0 +1,43 @@
+{
+ "type": "er",
+ "data": {
+  "nodes": [
+   {
+    "id": "entity-PERSON-0",
+    "label": "PERSON",
+    "attributes": [
+     {
+      "type": "string",
+      "name": "firstName",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "string?",
+      "name": "middleName",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "string",
+      "name": "lastName",
+      "keys": [],
+      "comment": ""
+     }
+    ],
+    "alias": "",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [],
+    "colorIndex": 0,
+    "isGroup": false
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

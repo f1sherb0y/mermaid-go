@@ -1,0 +1,84 @@
+{
+ "type": "flowchart-v2",
+ "data": {
+  "nodes": [
+   {
+    "id": "A",
+    "label": "File Handling",
+    "labelType": "markdown",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-A-0",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "manual-file",
+    "minWidth": 120
+   },
+   {
+    "id": "B",
+    "label": "User Input",
+    "labelType": "markdown",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-B-2",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "manual-input",
+    "minWidth": 120
+   },
+   {
+    "id": "C",
+    "label": "Multiple Documents",
+    "labelType": "markdown",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-C-4",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "docs",
+    "minWidth": 120
+   },
+   {
+    "id": "D",
+    "label": "Process Automation",
+    "labelType": "markdown",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-D-6",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "procs",
+    "minWidth": 120
+   },
+   {
+    "id": "E",
+    "label": "Paper Records",
+    "labelType": "markdown",
+    "labelStyle": "",
+    "padding": 15,
+    "cssStyles": [],
+    "cssCompiledStyles": [],
+    "cssClasses": "default ",
+    "domId": "flowchart-E-8",
+    "look": "classic",
+    "isGroup": false,
+    "shape": "paper-tape",
+    "minWidth": 120
+   }
+  ],
+  "edges": [],
+  "other": {}
+ }
+}

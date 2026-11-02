@@ -1,0 +1,45 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Animal",
+    "label": "Animal",
+    "text": "Animal",
+    "shape": "classBox",
+    "cssClasses": "default someclass",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "-",
+      "classifier": "",
+      "text": "\\-canEat()",
+      "id": "canEat",
+      "parameters": "",
+      "returnType": ""
+     }
+    ],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "-",
+      "classifier": "",
+      "text": "\\-int sizeInFeet",
+      "id": "int sizeInFeet"
+     }
+    ],
+    "annotations": [],
+    "styles": [
+     "fill:#f96"
+    ],
+    "domId": "classId-Animal-105",
+    "isGroup": false,
+    "look": "classic",
+    "colorIndex": 0
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

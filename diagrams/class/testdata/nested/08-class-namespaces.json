@@ -1,0 +1,153 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "Shapes",
+    "label": "Shapes",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic"
+   },
+   {
+    "id": "Storage",
+    "label": "Storage",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic"
+   },
+   {
+    "id": "Shape",
+    "label": "Shape",
+    "text": "Shape",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+area() : double",
+      "id": "area",
+      "parameters": "",
+      "returnType": "double"
+     }
+    ],
+    "members": [],
+    "annotations": [
+     "interface"
+    ],
+    "styles": [],
+    "domId": "classId-Shape-110",
+    "parent": "Shapes",
+    "isGroup": false,
+    "parentId": "Shapes",
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Circle",
+    "label": "Circle",
+    "text": "Circle",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+radius double",
+      "id": "radius double"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Circle-111",
+    "parent": "Shapes",
+    "isGroup": false,
+    "parentId": "Shapes",
+    "look": "classic",
+    "colorIndex": 1
+   },
+   {
+    "id": "Repo",
+    "label": "Repo",
+    "text": "Repo&lt;T&gt;",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [
+     {
+      "memberType": "method",
+      "visibility": "+",
+      "classifier": "",
+      "text": "\\+save(T item)",
+      "id": "save",
+      "parameters": "T item",
+      "returnType": ""
+     }
+    ],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Repo-112",
+    "parent": "Storage",
+    "isGroup": false,
+    "parentId": "Storage",
+    "look": "classic",
+    "colorIndex": 2
+   }
+  ],
+  "edges": [
+   {
+    "id": "id_Shape_Circle_1",
+    "start": "Shape",
+    "end": "Circle",
+    "type": "normal",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "extension",
+    "arrowTypeEnd": "none",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "dashed",
+    "look": "classic",
+    "labelType": "markdown"
+   },
+   {
+    "id": "id_Repo_Shape_2",
+    "start": "Repo",
+    "end": "Shape",
+    "type": "normal",
+    "label": "stores",
+    "labelpos": "c",
+    "thickness": "normal",
+    "classes": "relation",
+    "arrowTypeStart": "none",
+    "arrowTypeEnd": "dependency",
+    "startLabelRight": "",
+    "endLabelLeft": "",
+    "arrowheadStyle": "",
+    "labelStyle": [
+     "display: inline-block"
+    ],
+    "style": "",
+    "pattern": "solid",
+    "look": "classic",
+    "labelType": "markdown"
+   }
+  ],
+  "other": {},
+  "direction": "TB"
+ }
+}

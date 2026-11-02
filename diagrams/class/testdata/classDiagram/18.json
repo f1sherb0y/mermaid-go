@@ -1,0 +1,68 @@
+{
+ "type": "classDiagram",
+ "data": {
+  "nodes": [
+   {
+    "id": "BaseShapes",
+    "label": "BaseShapes",
+    "isGroup": true,
+    "padding": 16,
+    "shape": "rect",
+    "cssStyles": [],
+    "look": "classic"
+   },
+   {
+    "id": "Triangle",
+    "label": "Triangle",
+    "text": "Triangle",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Triangle-67",
+    "parent": "BaseShapes",
+    "isGroup": false,
+    "parentId": "BaseShapes",
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "id": "Rectangle",
+    "label": "Rectangle",
+    "text": "Rectangle",
+    "shape": "classBox",
+    "cssClasses": "default",
+    "methods": [],
+    "members": [
+     {
+      "memberType": "attribute",
+      "visibility": "",
+      "classifier": "",
+      "text": "double width",
+      "id": "double width"
+     },
+     {
+      "memberType": "attribute",
+      "visibility": "",
+      "classifier": "",
+      "text": "double height",
+      "id": "double height"
+     }
+    ],
+    "annotations": [],
+    "styles": [],
+    "domId": "classId-Rectangle-68",
+    "parent": "BaseShapes",
+    "isGroup": false,
+    "parentId": "BaseShapes",
+    "look": "classic",
+    "colorIndex": 1
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

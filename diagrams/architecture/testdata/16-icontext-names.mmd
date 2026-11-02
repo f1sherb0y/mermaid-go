@@ -1,0 +1,11 @@
+architecture-beta
+    group Lambda(cloud)[Lambda Group]
+    service Rabbit "MQ"[Rabbit MQ] in Lambda
+    service Backend(server)[Backend] in Lambda
+    service Tasks "Task Runner Service"[Tasks]
+    service 20(server)[Twenty]
+    junction j
+    Rabbit:R -- L:Backend
+    Backend:B -- T:j
+    j:L -- R:Tasks
+    j:R -- L:20

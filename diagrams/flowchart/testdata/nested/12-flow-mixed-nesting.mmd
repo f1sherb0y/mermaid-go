@@ -1,0 +1,19 @@
+flowchart LR
+  subgraph A[Outer A]
+    direction TB
+    a1 --> a2
+    subgraph B[Inner B]
+      b1 --> b2
+      subgraph C[Innermost C]
+        c1
+      end
+    end
+    a2 --> B
+  end
+  subgraph D[Sibling D]
+    d1 --> d2
+  end
+  C --> D
+  b2 --> d1
+  x[outside] --> A
+  c1 --> x

@@ -1,0 +1,58 @@
+{
+ "type": "er",
+ "data": {
+  "nodes": [
+   {
+    "id": "entity-p-0",
+    "label": "p",
+    "attributes": [
+     {
+      "type": "string",
+      "name": "x",
+      "keys": [],
+      "comment": ""
+     },
+     {
+      "type": "int",
+      "name": "y",
+      "keys": [],
+      "comment": ""
+     }
+    ],
+    "alias": "Person Name",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default a c",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [
+     "stroke:#f00",
+     "fill:#0f0"
+    ],
+    "colorIndex": 0,
+    "isGroup": false
+   },
+   {
+    "id": "entity-q-1",
+    "label": "q",
+    "attributes": [],
+    "alias": "Q",
+    "shape": "erBox",
+    "look": "classic",
+    "cssClasses": "default a b c",
+    "cssStyles": [],
+    "labelType": "markdown",
+    "cssCompiledStyles": [
+     "stroke:#f00",
+     "fill:#0f0",
+     "fill:#0f0"
+    ],
+    "colorIndex": 1,
+    "isGroup": false
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

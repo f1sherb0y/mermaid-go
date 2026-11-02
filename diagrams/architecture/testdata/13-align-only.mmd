@@ -1,0 +1,11 @@
+architecture-beta
+    service a(server)[A]
+    service b(server)[B]
+    service c(server)[C]
+    service d(database)[D]
+    service e(database)[E]
+    service f(database)[F]
+    align row a b c
+    align row d e f
+    align column a d
+    align column c f

@@ -1,0 +1,41 @@
+{
+ "type": "requirement",
+ "data": {
+  "nodes": [
+   {
+    "name": "test_req",
+    "type": "Requirement",
+    "requirementId": "1",
+    "text": "class styling example",
+    "risk": "Low",
+    "verifyMethod": "Test",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "id": "test_req",
+    "cssClasses": "default",
+    "shape": "requirementBox",
+    "look": "classic",
+    "colorIndex": 0
+   },
+   {
+    "name": "test_entity",
+    "type": "simulation",
+    "docRef": "",
+    "cssStyles": [],
+    "classes": [
+     "default"
+    ],
+    "shape": "requirementBox",
+    "look": "classic",
+    "id": "test_entity",
+    "cssClasses": "default",
+    "colorIndex": 1
+   }
+  ],
+  "edges": [],
+  "other": {},
+  "direction": "TB"
+ }
+}

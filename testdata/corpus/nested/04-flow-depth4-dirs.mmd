@@ -1,0 +1,30 @@
+flowchart TD
+  subgraph s["Level 1 s"]
+    direction LR
+    sa[s a] --> sb(s b)
+    subgraph sx["Level 2 sx"]
+      direction TB
+      sxa[sx a] --> sxb(sx b)
+      subgraph sxx["Level 3 sxx"]
+        direction LR
+        sxxa[sxx a] --> sxxb(sxx b)
+        subgraph sxxx["Level 4 sxxx"]
+          direction TB
+          sxxxa[sxxx a] --> sxxxb(sxxx b)
+        end
+      end
+      subgraph sxy["Level 3 sxy"]
+        direction LR
+        sxya[sxy a] --> sxyb(sxy b)
+        subgraph sxyx["Level 4 sxyx"]
+          direction TB
+          sxyxa[sxyx a] --> sxyxb(sxyx b)
+        end
+      end
+    end
+  end
+  start((start)) --> sa
+  sxxxb --> sb
+  sxa -- "cross level" --> sxxxa
+  sxxxb -.-> out{done?}
+  s --> out

@@ -1,0 +1,12 @@
+architecture-beta
+    group integrations(cloud)[Third-party integrations and partner APIs]
+    service browser(internet)[Customer browser or mobile device]
+    service gateway(server)[Public API gateway with rate limiting]
+    service billing(server)[Billing and invoicing service] in integrations
+    service crm(server)[CRM sync] in integrations
+    service warehouse(database)[Data warehouse for reporting]
+
+    browser:R -[HTTPS with OAuth 2.0 bearer tokens]-> L:gateway
+    gateway:R -[gRPC]-> L:billing
+    billing:B -[nightly export of invoices and payments]-> T:crm
+    gateway:B -[change data capture stream]-> T:warehouse
