@@ -6,6 +6,9 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import path from 'node:path';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
+// The reference data (mermaid.js, fonts, real diagrams): $MERMAID_DATA, else
+// the data folder of a MeetBuddy checkout beside this repository.
+const DATA = process.env.MERMAID_DATA ?? path.join(here, "../../../shitou/data");
 const lodash = pathToFileURL(path.join(here, 'node_modules/lodash-es/lodash.js')).href;
 registerHooks({
   resolve(specifier, context, next) {

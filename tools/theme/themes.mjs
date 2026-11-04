@@ -10,7 +10,7 @@
 // its own output); and <outdir>/appearance.json: each diagram's default theme and look from
 // mermaid's defaultConfig.
 //
-// Env: MERMAID_JS (default ../../data/ref/pkg/mermaid-12.2.0/package/dist/mermaid.min.js),
+// Env: MERMAID_JS (default $MERMAID_DATA/ref/pkg/mermaid-12.2.0/package/dist/mermaid.min.js),
 // CHROME (default the Windows install).
 import { chromium } from "playwright-core";
 import fs from "node:fs";
@@ -18,7 +18,10 @@ import path from "node:path";
 import zlib from "node:zlib";
 
 const here = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1"));
-const MERMAID_JS = process.env.MERMAID_JS ?? path.join(here, "../../../../data/ref/pkg/mermaid-12.2.0/package/dist/mermaid.min.js");
+// The reference data (mermaid.js, fonts, real diagrams): $MERMAID_DATA, else
+// the data folder of a MeetBuddy checkout beside this repository.
+const DATA = process.env.MERMAID_DATA ?? path.join(here, "../../../shitou/data");
+const MERMAID_JS = process.env.MERMAID_JS ?? path.join(DATA, "ref/pkg/mermaid-12.2.0/package/dist/mermaid.min.js");
 const CHROME = process.env.CHROME ?? "C:/Program Files/Google/Chrome/Application/chrome.exe";
 const OUT = process.argv[2] ?? path.join(here, "../../theme/testdata");
 

@@ -12,6 +12,6 @@ import (
 // for the same diagram written so that it reads it (names quoted, no
 // trailing white space). 17 checks that the cardinality words still work.
 func TestGetData(t *testing.T) {
-	cases := datatest.Cases([]string{"testdata/entityRelationshipDiagram", "testdata/edge", "../../../../data/mermaid-port/corpus-real/real"}, "erDiagram")
+	cases := datatest.Cases([]string{"testdata/entityRelationshipDiagram", "testdata/edge", datatest.Data("mermaid-port/corpus-real/real")}, "erDiagram")
 	datatest.Run(t, Parse, cases, nil)
 }

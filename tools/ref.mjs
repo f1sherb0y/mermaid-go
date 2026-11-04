@@ -10,7 +10,7 @@
 //   node tools/ref.mjs measure <in.json> <out.json> text widths and heights in Chrome, for the
 //                                                   text measurer's tests.
 //
-// Env: MERMAID_JS (default ../../data/ref/pkg/mermaid-12.2.0/package/dist/mermaid.min.js),
+// Env: MERMAID_JS (default $MERMAID_DATA/ref/pkg/mermaid-12.2.0/package/dist/mermaid.min.js),
 // CHROME (default the Windows install), ONLY=<substring> to restrict the files; CAPTURE_ELK and
 // CAPTURE_FCOSE (with FCOSE_TRACE=<n> for the first n iterations' rects) record layout input and
 // output for the ELK and fcose ports' tests (see below).
@@ -19,7 +19,10 @@ import fs from "node:fs";
 import path from "node:path";
 
 const here = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1"));
-const MERMAID_JS = process.env.MERMAID_JS ?? path.join(here, "../../../data/ref/pkg/mermaid-12.2.0/package/dist/mermaid.min.js");
+// The reference data (mermaid.js, fonts, real diagrams): $MERMAID_DATA, else
+// the data folder of a MeetBuddy checkout beside this repository.
+const DATA = process.env.MERMAID_DATA ?? path.join(here, "../../shitou/data");
+const MERMAID_JS = process.env.MERMAID_JS ?? path.join(DATA, "ref/pkg/mermaid-12.2.0/package/dist/mermaid.min.js");
 const CHROME = process.env.CHROME ?? "C:/Program Files/Google/Chrome/Application/chrome.exe";
 
 function walk(dir, base = dir) {
@@ -154,7 +157,7 @@ async function pool(items, setup, job) {
 
 // The fonts mermaid.live loads: Recursive Variable (@fontsource-variable/recursive, crsv.css), inlined
 // so an about:blank page can use them. RECURSIVE: that package's directory.
-const RECURSIVE = process.env.RECURSIVE ?? path.join(here, "../../../data/ref/pkg/recursive/package");
+const RECURSIVE = process.env.RECURSIVE ?? path.join(DATA, "ref/pkg/recursive/package");
 const FONTS = fs.readFileSync(path.join(RECURSIVE, "crsv.css"), "utf8").replace(/url\(\.\/files\/([^)]+)\)/g,
   (_, f) => `url(data:font/woff2;base64,${fs.readFileSync(path.join(RECURSIVE, "files", f)).toString("base64")})`);
 

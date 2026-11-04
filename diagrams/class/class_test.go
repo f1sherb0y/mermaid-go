@@ -7,7 +7,7 @@ import (
 )
 
 func TestGetData(t *testing.T) {
-	cases := datatest.Cases([]string{"testdata/classDiagram", "testdata/nested", "../../../../data/mermaid-port/corpus-real/real"}, "classDiagram", "classDiagram-v2")
+	cases := datatest.Cases([]string{"testdata/classDiagram", "testdata/nested", datatest.Data("mermaid-port/corpus-real/real")}, "classDiagram", "classDiagram-v2")
 	datatest.Run(t, Parse, cases, allowed)
 }
 

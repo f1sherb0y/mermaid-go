@@ -14,7 +14,7 @@ import (
 )
 
 func TestGetData(t *testing.T) {
-	cases := datatest.Cases([]string{"testdata/stateDiagram", "testdata/nested", "../../../../data/mermaid-port/corpus-real/real"}, "stateDiagram", "stateDiagram-v2")
+	cases := datatest.Cases([]string{"testdata/stateDiagram", "testdata/nested", datatest.Data("mermaid-port/corpus-real/real")}, "stateDiagram", "stateDiagram-v2")
 	tmp := t.TempDir()
 	for i, c := range cases {
 		if c.Dump == "" {

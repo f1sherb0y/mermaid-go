@@ -14,6 +14,8 @@ import (
 	"github.com/f1sherb0y/mermaid-go/scene"
 	"github.com/f1sherb0y/mermaid-go/text"
 	"github.com/f1sherb0y/mermaid-go/theme"
+
+	"github.com/f1sherb0y/mermaid-go/diagrams/internal/datatest"
 )
 
 type vars struct{ v *theme.Variables }
@@ -25,7 +27,7 @@ func (t vars) Get(name string) string { return t.v.Str(strings.Split(name, ".").
 func context(t *testing.T) *diagram.Context {
 	fs := text.NewFonts()
 	if fs.AddFile("trebuchet ms", "C:/Windows/Fonts/trebuc.ttf") != nil &&
-		fs.AddFile("trebuchet ms", "../../../../data/ref/fonts/RecursiveSansLinear-VF.ttf") != nil {
+		fs.AddFile("trebuchet ms", datatest.Data("ref/fonts/RecursiveSansLinear-VF.ttf")) != nil {
 		t.Skip("no font")
 	}
 	v, err := theme.Get("default", nil)

@@ -9,6 +9,8 @@ import (
 	"github.com/f1sherb0y/mermaid-go"
 	"github.com/f1sherb0y/mermaid-go/diagrams/xychart"
 	"github.com/f1sherb0y/mermaid-go/text"
+
+	"github.com/f1sherb0y/mermaid-go/diagrams/internal/datatest"
 )
 
 func TestParse(t *testing.T) {
@@ -59,7 +61,7 @@ func TestCorpus(t *testing.T) { renderCorpus(t, "xyChart", "xychart") }
 
 func renderCorpus(t *testing.T, dir, keyword string) {
 	fs := text.NewFonts()
-	if err := fs.AddFile("Recursive Variable", "../../../../data/ref/fonts/RecursiveSansLinear-VF.ttf"); err != nil {
+	if err := fs.AddFile("Recursive Variable", datatest.Data("ref/fonts/RecursiveSansLinear-VF.ttf")); err != nil {
 		t.Skip("no fonts:", err)
 	}
 	fs.AddFile("trebuchet ms", "C:/Windows/Fonts/trebuc.ttf")

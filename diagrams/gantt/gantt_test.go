@@ -9,6 +9,8 @@ import (
 
 	"github.com/f1sherb0y/mermaid-go"
 	"github.com/f1sherb0y/mermaid-go/text"
+
+	"github.com/f1sherb0y/mermaid-go/diagrams/internal/datatest"
 )
 
 func day(y, m, d int) time.Time { return time.Date(y, time.Month(m), d, 0, 0, 0, 0, time.UTC) }
@@ -109,7 +111,7 @@ func TestParse(t *testing.T) {
 // TestCorpus renders every gantt chart of the corpus.
 func TestCorpus(t *testing.T) {
 	fs := text.NewFonts()
-	if err := fs.AddFile("Recursive Variable", "../../../../data/ref/fonts/RecursiveSansLinear-VF.ttf"); err != nil {
+	if err := fs.AddFile("Recursive Variable", datatest.Data("ref/fonts/RecursiveSansLinear-VF.ttf")); err != nil {
 		t.Skip("no fonts:", err)
 	}
 	fs.AddFile("trebuchet ms", "C:/Windows/Fonts/trebuc.ttf")

@@ -79,6 +79,11 @@ The test suites compare against mermaid.js output captured in Chrome. Dagre matc
 fcose on 134 of 135. To score your own changes, `tools/ref.mjs` renders references with mermaid.js and compares them
 pixel by pixel (see [DESIGN.md](DESIGN.md)).
 
+Some tests and tools also read reference data that is not in this repository: mermaid.js 12.2.0 and the
+packages it bundles, the Recursive font mermaid.live draws with, and a corpus of real diagrams with
+mermaid.live's dumps. They look for it under `$MERMAID_DATA`, else in `../shitou/data` beside this checkout
+(the MeetBuddy repository, where it was made); what is missing is skipped.
+
 Speed: about 1 ms per diagram on average over mermaid's documentation examples, including SVG output.
 
 ## Layout of the code

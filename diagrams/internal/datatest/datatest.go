@@ -180,6 +180,38 @@ type Case struct {
 	Name, Src, Dump string
 }
 
+// Data is a path in the reference data the tests compare with, which is
+// not in this repository (mermaid.live's dumps of real diagrams, the fonts
+// it draws with): under $MERMAID_DATA, else the data folder of a MeetBuddy
+// checkout beside this one (../shitou/data), where it was made. What is not
+// there is skipped.
+func Data(rel string) string {
+	dir := os.Getenv("MERMAID_DATA")
+	if dir == "" {
+		dir = filepath.Join(moduleRoot(), "..", "shitou", "data")
+	}
+	return filepath.Join(dir, filepath.FromSlash(rel))
+}
+
+// moduleRoot is the directory of this module's go.mod, found upward from
+// the test's directory.
+func moduleRoot() string {
+	dir, err := os.Getwd()
+	if err != nil {
+		return "."
+	}
+	for d := dir; ; {
+		if _, err := os.Stat(filepath.Join(d, "go.mod")); err == nil {
+			return d
+		}
+		up := filepath.Dir(d)
+		if up == d {
+			return dir
+		}
+		d = up
+	}
+}
+
 // Cases lists the .mmd files under dirs whose header is one of headers
 // (e.g. "flowchart", "graph"), each with the .json dump beside it or, for
 // directories under data/mermaid-port/corpus-real, in getdata.

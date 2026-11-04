@@ -6,7 +6,7 @@
 // khroma is not exposed by the bundle, so its sources are taken from the bundle's source map
 // (the exact code mermaid ships) and loaded as ES modules from a temporary directory.
 //
-// Env: MERMAID_MAP (default ../../data/ref/pkg/mermaid-12.2.0/package/dist/mermaid.js.map).
+// Env: MERMAID_MAP (default $MERMAID_DATA/ref/pkg/mermaid-12.2.0/package/dist/mermaid.js.map).
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -14,7 +14,10 @@ import { pathToFileURL } from "node:url";
 import zlib from "node:zlib";
 
 const here = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1"));
-const MAP = process.env.MERMAID_MAP ?? path.join(here, "../../../../data/ref/pkg/mermaid-12.2.0/package/dist/mermaid.js.map");
+// The reference data (mermaid.js, fonts, real diagrams): $MERMAID_DATA, else
+// the data folder of a MeetBuddy checkout beside this repository.
+const DATA = process.env.MERMAID_DATA ?? path.join(here, "../../../shitou/data");
+const MAP = process.env.MERMAID_MAP ?? path.join(DATA, "ref/pkg/mermaid-12.2.0/package/dist/mermaid.js.map");
 const OUT = process.argv[2] ?? path.join(here, "../../color/testdata/khroma.json.gz");
 
 const map = JSON.parse(fs.readFileSync(MAP, "utf8"));

@@ -6,7 +6,10 @@ import fs from "node:fs";
 import path from "node:path";
 
 const here = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1"));
-const MERMAID_JS = process.env.MERMAID_JS ?? path.join(here, "../../../data/ref/pkg/mermaid-12.2.0/package/dist/mermaid.min.js");
+// The reference data (mermaid.js, fonts, real diagrams): $MERMAID_DATA, else
+// the data folder of a MeetBuddy checkout beside this repository.
+const DATA = process.env.MERMAID_DATA ?? path.join(here, "../../shitou/data");
+const MERMAID_JS = process.env.MERMAID_JS ?? path.join(DATA, "ref/pkg/mermaid-12.2.0/package/dist/mermaid.min.js");
 const [corpus, out] = process.argv.slice(2);
 
 function walk(dir, base = dir) {

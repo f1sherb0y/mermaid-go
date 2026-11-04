@@ -11,6 +11,8 @@ import (
 	"github.com/f1sherb0y/mermaid-go"
 	_ "github.com/f1sherb0y/mermaid-go/diagrams/sequence"
 	"github.com/f1sherb0y/mermaid-go/text"
+
+	"github.com/f1sherb0y/mermaid-go/diagrams/internal/datatest"
 )
 
 // cases are the sequence diagrams of mermaid's docs (testdata/corpus) and
@@ -42,7 +44,7 @@ func cases(t *testing.T) map[string]string {
 // families not registered (the other themes'); nil without it.
 func fonts() *text.Fonts {
 	fs := text.NewFonts()
-	if fs.AddFile("Recursive Variable", "../../../../data/ref/fonts/RecursiveSansLinear-VF.ttf") != nil {
+	if fs.AddFile("Recursive Variable", datatest.Data("ref/fonts/RecursiveSansLinear-VF.ttf")) != nil {
 		return nil
 	}
 	fs.AddFile("trebuchet ms", "C:/Windows/Fonts/trebuc.ttf")
